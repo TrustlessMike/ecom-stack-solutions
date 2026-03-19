@@ -1,0 +1,44 @@
+# Ecommerce Stack Solutions - LLMs.txt
+# AI crawler accessibility map for ecomstacksolutions.com
+
+## Site Info
+Name: Ecommerce Stack Solutions
+URL: https://ecomstacksolutions.com
+Description: Expert reviews of Shopify apps, email marketing, and conversion tools for ecommerce
+Founder: Malik
+Founded: 2026
+
+## Content Sections
+
+### Pillar Pages
+- /pillar/shopify-apps - Shopify app reviews
+- /pillar/email-marketing - Email marketing platforms
+- /pillar/reviews-ugc - Review and UGC tools
+- /pillar/conversions-cro - Conversion optimization
+- /pillar/fulfillment - Fulfillment software
+- /pillar/analytics - Ecommerce analytics
+
+### Blog Articles
+- Coming soon: Ecommerce tool reviews and comparisons
+
+### Legal Pages
+- /legal/privacy - Privacy Policy
+- /legal/terms - Terms of Service
+- /legal/disclosure - Affiliate Disclosure
+- /legal/about - About Us
+
+## Affiliate Programs
+We review and link to: Shopify, Klaviyo, Privy, Judge.me, Loox, ConvertKit, Omnisend, Gorgias, Recharge, Yotpo
+
+## Structured Data
+This site implements JSON-LD schema:
+- WebSite
+- Organization
+- Article
+- Product (review)
+- FAQPage
+- BreadcrumbList
+
+## Contact
+Email: malik@stack-labs.net
+Business: Stack Labs LLC

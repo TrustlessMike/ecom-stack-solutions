@@ -1,415 +1,489 @@
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'R',
-  description: 'R',
-};
-
-export default function Article() {
-  return (
-    <main className="min-h-screen py-16">
-      <div className="max-w-4xl mx-auto px-4">
-        <article className="prose prose-lg max-w-none">
-          <h1 className="text-4xl font-bold mb-4">Recharge vs Appstle: Subscription Apps 2026</h1>
-
-<p className="mb-4">Subscription commerce is booming. Recurring revenue models increase customer lifetime value and predictable cash flow. On Shopify, Recharge and Appstle dominate the subscription app category with 20,000+ combined installs.</p>
-
-<p className="mb-4">Both apps manage subscriptions, handle billing, and provide customer portals. But they serve different merchant sizes and price points. Our team has analyzed both platforms to help you choose the right subscription solution.</p>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4">Quick Answer: Market Leader vs Challenger</h2>
-
-<strong>Recharge</strong> powers 60% of Shopify subscription stores with 10,000+ merchants including HelloFresh, Beachbody, and Bulletproof. Enterprise features, proven scale.
-
-<strong>Appstle</strong> serves 5,000+ merchants with simpler setup and lower pricing. Strong Shopify integration, growing feature set.
-
-<p className="mb-4">Choose Recharge for enterprise scale. Choose Appstle for mid-market value.</p>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4">Feature Comparison</h2>
-
-<h3 className="text-xl font-semibold mt-6 mb-3">Recharge: Enterprise Subscription Platform</h3>
-
-<p className="mb-4">Recharge is the subscription commerce leader:</p>
-
-<strong>Core Features:</strong>
-<li>Flexible subscription rules (frequency, quantity, product swaps)</li>
-<li>Customer portal (manage, skip, swap, cancel)</li>
-<li>Build-a-box functionality</li>
-<li>Subscription analytics dashboard</li>
-<li>Churn prevention tools</li>
-<li>Advanced dunning (failed payment recovery)</li>
-<li>API access for custom integrations</li>
-<li>100+ app integrations</li>
-<li>Multi-currency support</li>
-<li>B2B wholesale subscriptions</li>
-<li>Custom checkout extensions</li>
-<li>Advanced segmentation</li>
-
-<strong>Strengths:</strong>
-<li>Most comprehensive feature set</li>
-<li>Enterprise-scale reliability</li>
-<li>Proven track record (10+ years)</li>
-<li>Extensive integration ecosystem</li>
-<li>Advanced dunning management</li>
-<li>Strong developer community</li>
-
-<strong>Weaknesses:</strong>
-<li>Higher pricing at scale</li>
-<li>Complex setup (8-12 hours)</li>
-<li>Steeper learning curve</li>
-<li>Pro plan required for advanced features</li>
-<li>Transaction fees on all plans</li>
-
-<h3 className="text-xl font-semibold mt-6 mb-3">Appstle: Mid-Market Subscription Specialist</h3>
-
-<p className="mb-4">Appstle focuses on simplicity and value:</p>
-
-<strong>Core Features:</strong>
-<li>Subscription management (frequency, quantity)</li>
-<li>Customer portal (manage, skip, cancel)</li>
-<li>Build-a-box functionality</li>
-<li>Subscription analytics</li>
-<li>Email notifications</li>
-<li>Dunning management</li>
-<li>50+ app integrations</li>
-<li>Multi-currency support</li>
-<li>Custom branding</li>
-<li>Loyalty program integration</li>
-<li>Quiz and survey builder</li>
-<li>Shopify checkout integration</li>
-
-<strong>Strengths:</strong>
-<li>Simple setup (2-4 hours)</li>
-<li>Lower pricing than Recharge</li>
-<li>Beautiful customer portal</li>
-<li>Strong Shopify integration</li>
-<li>Responsive support</li>
-<li>No transaction fees on Pro plan</li>
-
-<strong>Weaknesses:</strong>
-<li>Less enterprise features</li>
-<li>Smaller integration ecosystem</li>
-<li>Limited B2B features</li>
-<li>Fewer advanced dunning options</li>
-<li>Less proven at massive scale</li>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4">Pricing Comparison</h2>
-
-<h3 className="text-xl font-semibold mt-6 mb-3">Recharge Pricing</h3>
-<li><strong>Standard:</strong> Free with 1% transaction fee</li>
-<li><strong>Pro:</strong> $499/month + 0.5% transaction fee (advanced features)</li>
-<li><strong>Plus:</strong> Custom pricing for enterprise</li>
-<li><strong>Enterprise:</strong> Custom pricing with dedicated support</li>
+---
+title: "Recharge vs Appstle: Subscription Apps 2026"
+description: "Recharge and Appstle lead Shopify subscription apps. We compare features, pricing, and which store types benefit most from each."
+date: "2026-03-19"
+author: "Stack Labs LLC"
+tags: ["Recharge", "Appstle", "Subscriptions", "Shopify", "Recurring Revenue"]
+---
+
+# Recharge vs Appstle: Subscription Apps 2026
+
+Subscription commerce is booming. Recurring revenue models increase customer lifetime value and predictable cash flow. On Shopify, Recharge and Appstle dominate the subscription app category with 20,000+ combined installs.
+
+Both apps manage subscriptions, handle billing, and provide customer portals. But they serve different merchant sizes and price points. Our team has analyzed both platforms to help you choose the right subscription solution.
+
+## Quick Answer: Market Leader vs Challenger
+
+**Recharge** powers 60% of Shopify subscription stores with 10,000+ merchants including HelloFresh, Beachbody, and Bulletproof. Enterprise features, proven scale.
+
+**Appstle** serves 5,000+ merchants with simpler setup and lower pricing. Strong Shopify integration, growing feature set.
 
-<p className="mb-4">Recharge charges transaction fees on all plans. Pro plan required for advanced features.</p>
+Choose Recharge for enterprise scale. Choose Appstle for mid-market value.
+
+## Feature Comparison
+
+### Recharge: Enterprise Subscription Platform
+
+Recharge is the subscription commerce leader:
+
+**Core Features:**
+- Flexible subscription rules (frequency, quantity, product swaps)
+- Customer portal (manage, skip, swap, cancel)
+- Build-a-box functionality
+- Subscription analytics dashboard
+- Churn prevention tools
+- Advanced dunning (failed payment recovery)
+- API access for custom integrations
+- 100+ app integrations
+- Multi-currency support
+- B2B wholesale subscriptions
+- Custom checkout extensions
+- Advanced segmentation
+
+**Strengths:**
+- Most comprehensive feature set
+- Enterprise-scale reliability
+- Proven track record (10+ years)
+- Extensive integration ecosystem
+- Advanced dunning management
+- Strong developer community
+
+**Weaknesses:**
+- Higher pricing at scale
+- Complex setup (8-12 hours)
+- Steeper learning curve
+- Pro plan required for advanced features
+- Transaction fees on all plans
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Appstle Pricing</h3>
-<li><strong>Basic:</strong> Free up to $500 MRR, 2% transaction fee</li>
-<li><strong>Pro:</strong> $29/month up to $2,500 MRR, 1% transaction fee</li>
-<li><strong>Growth:</strong> $79/month up to $10,000 MRR, 0.5% transaction fee</li>
-<li><strong>Premium:</strong> $149/month unlimited MRR, 0% transaction fee</li>
-<li><strong>Enterprise:</strong> Custom pricing</li>
+### Appstle: Mid-Market Subscription Specialist
 
-<p className="mb-4">Appstle eliminates transaction fees at Premium tier. More affordable for mid-market.</p>
+Appstle focuses on simplicity and value:
 
-<strong>Winner:</strong> Appstle for pricing transparency, Recharge for enterprise features
+**Core Features:**
+- Subscription management (frequency, quantity)
+- Customer portal (manage, skip, cancel)
+- Build-a-box functionality
+- Subscription analytics
+- Email notifications
+- Dunning management
+- 50+ app integrations
+- Multi-currency support
+- Custom branding
+- Loyalty program integration
+- Quiz and survey builder
+- Shopify checkout integration
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Subscription Management</h2>
+**Strengths:**
+- Simple setup (2-4 hours)
+- Lower pricing than Recharge
+- Beautiful customer portal
+- Strong Shopify integration
+- Responsive support
+- No transaction fees on Pro plan
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Recharge Management</h3>
+**Weaknesses:**
+- Less enterprise features
+- Smaller integration ecosystem
+- Limited B2B features
+- Fewer advanced dunning options
+- Less proven at massive scale
 
-<p className="mb-4">Recharge offers flexible subscription rules:</p>
-<li>Frequency customization (weekly, monthly, quarterly)</li>
-<li>Quantity management</li>
-<li>Product swaps (change products in subscription)</li>
-<li>Delivery date customization</li>
-<li>Pause functionality</li>
-<li>Skip upcoming deliveries</li>
-<li>Cancel with retention offers</li>
-<li>One-time add-ons</li>
-<li>Build-a-box (mix and match products)</li>
+## Pricing Comparison
 
-<p className="mb-4">Merchants report 15-25% reduction in churn with flexible rules.</p>
+### Recharge Pricing
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Appstle Management</h3>
+- **Standard:** Free with 1% transaction fee
+- **Pro:** $499/month + 0.5% transaction fee (advanced features)
+- **Plus:** Custom pricing for enterprise
+- **Enterprise:** Custom pricing with dedicated support
 
-<p className="mb-4">Appstle provides core subscription features:</p>
-<li>Frequency customization</li>
-<li>Quantity management</li>
-<li>Product swaps</li>
-<li>Pause and skip</li>
-<li>Cancel flows</li>
-<li>Build-a-box</li>
-<li>One-time purchases alongside subscriptions</li>
-<li>Delivery date selection</li>
+Recharge charges transaction fees on all plans. Pro plan required for advanced features.
 
-<p className="mb-4">Feature set covers 90% of Recharge at lower price.</p>
+### Appstle Pricing
 
-<strong>Winner:</strong> Recharge for flexibility, Appstle for simplicity
+- **Basic:** Free up to $500 MRR, 2% transaction fee
+- **Pro:** $29/month up to $2,500 MRR, 1% transaction fee
+- **Growth:** $79/month up to $10,000 MRR, 0.5% transaction fee
+- **Premium:** $149/month unlimited MRR, 0% transaction fee
+- **Enterprise:** Custom pricing
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Customer Portal</h2>
+Appstle eliminates transaction fees at Premium tier. More affordable for mid-market.
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Recharge Portal</h3>
+**Winner:** Appstle for pricing transparency, Recharge for enterprise features
 
-<p className="mb-4">Recharge customer portal includes:</p>
-<li>Subscription management (pause, skip, cancel)</li>
-<li>Product swaps</li>
-<li>Delivery date changes</li>
-<li>Payment method updates</li>
-<li>Order history</li>
-<li>Upcoming charges preview</li>
-<li>Loyalty points integration</li>
-<li>Referral program integration</li>
-<li>Branded experience</li>
+## Subscription Management
 
-<p className="mb-4">Portal is functional but design feels dated.</p>
+### Recharge Management
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Appstle Portal</h3>
+Recharge offers flexible subscription rules:
 
-<p className="mb-4">Appstle customer portal features:</p>
-<li>Modern, mobile-optimized design</li>
-<li>Subscription management</li>
-<li>Product swaps</li>
-<li>Pause and skip</li>
-<li>Delivery date changes</li>
-<li>Payment updates</li>
-<li>Order history</li>
-<li>Loyalty integration</li>
-<li>Custom branding</li>
+- Frequency customization (weekly, monthly, quarterly)
+- Quantity management
+- Product swaps (change products in subscription)
+- Delivery date customization
+- Pause functionality
+- Skip upcoming deliveries
+- Cancel with retention offers
+- One-time add-ons
+- Build-a-box (mix and match products)
 
-<p className="mb-4">Portal design is more modern and converts better.</p>
+Merchants report 15-25% reduction in churn with flexible rules.
 
-<strong>Winner:</strong> Appstle for design, Recharge for feature depth
+### Appstle Management
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Dunning and Failed Payment Recovery</h2>
+Appstle provides core subscription features:
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Recharge Dunning</h3>
+- Frequency customization
+- Quantity management
+- Product swaps
+- Pause and skip
+- Cancel flows
+- Build-a-box
+- One-time purchases alongside subscriptions
+- Delivery date selection
 
-<p className="mb-4">Recharge leads in dunning management:</p>
-<li>Automated retry schedules (3-5 attempts)</li>
-<li>Email and SMS notifications</li>
-<li>Account updater (auto-update expired cards)</li>
-<li>Smart retry logic (timing optimization)</li>
-<li>Manual retry tools</li>
-<li>Failed payment analytics</li>
-<li>Churn prediction</li>
+Feature set covers 90% of Recharge at lower price.
 
-<p className="mb-4">Recovery rates: 40-50% of failed payments</p>
+**Winner:** Recharge for flexibility, Appstle for simplicity
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Appstle Dunning</h3>
+## Customer Portal
 
-<p className="mb-4">Appstle provides:</p>
-<li>Automated retry schedules (3 attempts)</li>
-<li>Email notifications</li>
-<li>Manual retry tools</li>
-<li>Failed payment tracking</li>
-<li>Basic analytics</li>
+### Recharge Portal
 
-<p className="mb-4">Recovery rates: 35-45% of failed payments</p>
+Recharge customer portal includes:
 
-<strong>Winner:</strong> Recharge for dunning sophistication
+- Subscription management (pause, skip, cancel)
+- Product swaps
+- Delivery date changes
+- Payment method updates
+- Order history
+- Upcoming charges preview
+- Loyalty points integration
+- Referral program integration
+- Branded experience
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Analytics and Reporting</h2>
+Portal is functional but design feels dated.
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Recharge Analytics</h3>
+### Appstle Portal
 
-<p className="mb-4">Recharge provides comprehensive reporting:</p>
-<li>MRR (monthly recurring revenue)</li>
-<li>ARR (annual recurring revenue)</li>
-<li>Churn rate (voluntary and involuntary)</li>
-<li>Customer LTV</li>
-<li>Cohort retention analysis</li>
-<li>Product performance</li>
-<li>Subscription lifecycle funnel</li>
-<li>Dunning performance</li>
-<li>Custom report builder</li>
+Appstle customer portal features:
 
-<p className="mb-4">Enterprise reporting is deep but complex.</p>
+- Modern, mobile-optimized design
+- Subscription management
+- Product swaps
+- Pause and skip
+- Delivery date changes
+- Payment updates
+- Order history
+- Loyalty integration
+- Custom branding
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Appstle Analytics</h3>
+Portal design is more modern and converts better.
 
-<p className="mb-4">Appstle offers:</p>
-<li>MRR tracking</li>
-<li>Churn rate</li>
-<li>Active subscriptions</li>
-<li>Revenue trends</li>
-<li>Product performance</li>
-<li>Customer insights</li>
-<li>Basic cohort analysis</li>
+**Winner:** Appstle for design, Recharge for feature depth
 
-<p className="mb-4">Reporting is simpler but actionable.</p>
+## Dunning and Failed Payment Recovery
 
-<strong>Winner:</strong> Recharge for depth, Appstle for simplicity
+### Recharge Dunning
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Integrations and Ecosystem</h2>
+Recharge leads in dunning management:
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Recharge Integrations</h3>
+- Automated retry schedules (3-5 attempts)
+- Email and SMS notifications
+- Account updater (auto-update expired cards)
+- Smart retry logic (timing optimization)
+- Manual retry tools
+- Failed payment analytics
+- Churn prediction
 
-<p className="mb-4">Recharge integrates with 100+ apps:</p>
-<li>Shopify (native)</li>
-<li>Klaviyo (subscription flows)</li>
-<li>Gorgias (support ticket context)</li>
-<li>Yotpo (review requests)</li>
-<li>Loyalty Lion (loyalty points)</li>
-<li>Smile.io (loyalty integration)</li>
-<li>Google Analytics (ecommerce tracking)</li>
-<li>Facebook (conversion API)</li>
-<li>Zapier (custom workflows)</li>
-<li>3PL fulfillment apps</li>
+Recovery rates: 40-50% of failed payments
 
-<p className="mb-4">Enterprise integrations (ERP, CRM) available.</p>
+### Appstle Dunning
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Appstle Integrations</h3>
+Appstle provides:
 
-<p className="mb-4">Appstle integrates with 50+ apps:</p>
-<li>Shopify (deep native)</li>
-<li>Klaviyo (email sync)</li>
-<li>Gorgias (support context)</li>
-<li>Smile.io (loyalty)</li>
-<li>Judge.me (review requests)</li>
-<li>Facebook (tracking)</li>
-<li>Google Analytics</li>
+- Automated retry schedules (3 attempts)
+- Email notifications
+- Manual retry tools
+- Failed payment tracking
+- Basic analytics
 
-<p className="mb-4">Focus is on Shopify ecosystem with strong mid-market apps.</p>
+Recovery rates: 35-45% of failed payments
 
-<strong>Winner:</strong> Recharge for enterprise, Appstle for Shopify depth
+**Winner:** Recharge for dunning sophistication
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Checkout Experience</h2>
+## Analytics and Reporting
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Recharge Checkout</h3>
+### Recharge Analytics
 
-<p className="mb-4">Recharge offers:</p>
-<li>Custom checkout extensions</li>
-<li>Subscription widgets on product pages</li>
-<li>Cart drawer integration</li>
-<li>One-click subscription purchase</li>
-<li>Upsell flows in checkout</li>
-<li>AOV optimization tools</li>
+Recharge provides comprehensive reporting:
 
-<p className="mb-4">Checkout is customizable but requires development.</p>
+- MRR (monthly recurring revenue)
+- ARR (annual recurring revenue)
+- Churn rate (voluntary and involuntary)
+- Customer LTV
+- Cohort retention analysis
+- Product performance
+- Subscription lifecycle funnel
+- Dunning performance
+- Custom report builder
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Appstle Checkout</h3>
+Enterprise reporting is deep but complex.
 
-<p className="mb-4">Appstle provides:</p>
-<li>Native Shopify checkout integration</li>
-<li>Subscription widgets</li>
-<li>Cart integration</li>
-<li>One-click purchase</li>
-<li>Upsell prompts</li>
-<li>Mobile-optimized flow</li>
+### Appstle Analytics
 
-<p className="mb-4">Checkout works out of the box with less customization.</p>
+Appstle offers:
 
-<strong>Winner:</strong> Recharge for customization, Appstle for simplicity
+- MRR tracking
+- Churn rate
+- Active subscriptions
+- Revenue trends
+- Product performance
+- Customer insights
+- Basic cohort analysis
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Migration from Other Platforms</h2>
+Reporting is simpler but actionable.
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Recharge Import</h3>
+**Winner:** Recharge for depth, Appstle for simplicity
 
-<p className="mb-4">Recharge imports from:</p>
-<li>Bold Subscriptions</li>
-<li>Ordergroove</li>
-<li>Cratejoy</li>
-<li>WooCommerce Subscriptions</li>
-<li>Custom CSV</li>
+## Integrations and Ecosystem
 
-<p className="mb-4">Import process:</p>
+### Recharge Integrations
 
-<p className="mb-4">1. Export subscriptions from old platform</p>
-<p className="mb-4">2. Upload customer and subscription data</p>
-<p className="mb-4">3. Map fields (customer, product, frequency, next charge)</p>
-<p className="mb-4">4. Test subscription processing</p>
-<p className="mb-4">5. Go live with new subscriptions</p>
+Recharge integrates with 100+ apps:
 
-<p className="mb-4">Most imports complete in 4-8 hours.</p>
+- Shopify (native)
+- Klaviyo (subscription flows)
+- Gorgias (support ticket context)
+- Yotpo (review requests)
+- Loyalty Lion (loyalty points)
+- Smile.io (loyalty integration)
+- Google Analytics (ecommerce tracking)
+- Facebook (conversion API)
+- Zapier (custom workflows)
+- 3PL fulfillment apps
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Appstle Import</h3>
+Enterprise integrations (ERP, CRM) available.
 
-<p className="mb-4">Appstle imports from:</p>
-<li>Bold Subscriptions</li>
-<li>Recharge (migration tool)</li>
-<li>Custom CSV</li>
+### Appstle Integrations
 
-<p className="mb-4">Import is more limited but works for major platforms.</p>
+Appstle integrates with 50+ apps:
 
-<strong>Winner:</strong> Recharge for import options
+- Shopify (deep native)
+- Klaviyo (email sync)
+- Gorgias (support context)
+- Smile.io (loyalty)
+- Judge.me (review requests)
+- Facebook (tracking)
+- Google Analytics
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Customer Support</h2>
+Focus is on Shopify ecosystem with strong mid-market apps.
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Recharge Support</h3>
-<li>Email support (24-48 hour response)</li>
-<li>Knowledge base</li>
-<li>Video tutorials</li>
-<li>Developer documentation</li>
-<li>Account manager (Pro+)</li>
-<li>Onboarding assistance (Enterprise)</li>
-<li>No live chat on Standard plan</li>
+**Winner:** Recharge for enterprise, Appstle for Shopify depth
 
-<p className="mb-4">Support quality varies by plan tier.</p>
+## Checkout Experience
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Appstle Support</h3>
-<li>Email support (24 hour response)</li>
-<li>Live chat (business hours)</li>
-<li>Knowledge base</li>
-<li>Video tutorials</li>
-<li>Onboarding calls (Pro+)</li>
-<li>Dedicated Slack channel (Premium)</li>
+### Recharge Checkout
 
-<p className="mb-4">Support is more responsive across all plans.</p>
+Recharge offers:
 
-<strong>Winner:</strong> Appstle for support quality
+- Custom checkout extensions
+- Subscription widgets on product pages
+- Cart drawer integration
+- One-click subscription purchase
+- Upsell flows in checkout
+- AOV optimization tools
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Best Use Cases</h2>
+Checkout is customizable but requires development.
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Choose Recharge When:</h3>
-<li>You need enterprise-scale reliability</li>
-<li>You process $50k+ MRR</li>
-<li>You want advanced dunning features</li>
-<li>You need B2B wholesale subscriptions</li>
-<li>You have dedicated development resources</li>
-<li>Budget allows $500+/month</li>
-<li>Team has subscription expertise</li>
+### Appstle Checkout
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Choose Appstle When:</h3>
-<li>You want simple setup (under 4 hours)</li>
-<li>You're mid-market ($5k-$50k MRR)</li>
-<li>You value modern customer portal</li>
-<li>You want lower transaction fees</li>
-<li>You prefer responsive support</li>
-<li>Budget is $30-150/month</li>
-<li>You're Shopify-focused</li>
+Appstle provides:
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Store Type Recommendations</h2>
+- Native Shopify checkout integration
+- Subscription widgets
+- Cart integration
+- One-click purchase
+- Upsell prompts
+- Mobile-optimized flow
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Supplements and Consumables: Recharge</h3>
+Checkout works out of the box with less customization.
 
-<p className="mb-4">High-volume subscriptions with complex dunning needs. Recharge handles scale better.</p>
+**Winner:** Recharge for customization, Appstle for simplicity
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Beauty and Skincare: Appstle</h3>
+## Migration from Other Platforms
 
-<p className="mb-4">Visual products with subscription boxes. Appstle portal design converts well.</p>
+### Recharge Import
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Coffee and Food: Recharge</h3>
+Recharge imports from:
 
-<p className="mb-4">High-frequency subscriptions (weekly deliveries). Recharge flexibility excels.</p>
+- Bold Subscriptions
+- Ordergroove
+- Cratejoy
+- WooCommerce Subscriptions
+- Custom CSV
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Apparel and Fashion: Appstle</h3>
+Import process:
 
-<p className="mb-4">Seasonal subscription boxes. Appstle build-a-box features work well.</p>
+1. Export subscriptions from old platform
+2. Upload customer and subscription data
+3. Map fields (customer, product, frequency, next charge)
+4. Test subscription processing
+5. Go live with new subscriptions
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Pet Supplies: Recharge</h3>
+Most imports complete in 4-8 hours.
 
-<p className="mb-4">Auto-ship with quantity adjustments. Recharge handles complex rules.</p>
+### Appstle Import
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Home and Cleaning: Appstle</h3>
+Appstle imports from:
 
-<p className="mb-4">Monthly replenishment. Appstle covers core needs at lower cost.</p>
+- Bold Subscriptions
+- Recharge (migration tool)
+- Custom CSV
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Comparison Table</h2>
+Import is more limited but works for major platforms.
 
-<p className="mb-4">| Feature | Recharge | Appstle |</p>
-<p className="mb-4">|</p>
-        </article>
-      </div>
-    </main>
-  );
-}
+**Winner:** Recharge for import options
+
+## Customer Support
+
+### Recharge Support
+
+- Email support (24-48 hour response)
+- Knowledge base
+- Video tutorials
+- Developer documentation
+- Account manager (Pro+)
+- Onboarding assistance (Enterprise)
+- No live chat on Standard plan
+
+Support quality varies by plan tier.
+
+### Appstle Support
+
+- Email support (24 hour response)
+- Live chat (business hours)
+- Knowledge base
+- Video tutorials
+- Onboarding calls (Pro+)
+- Dedicated Slack channel (Premium)
+
+Support is more responsive across all plans.
+
+**Winner:** Appstle for support quality
+
+## Best Use Cases
+
+### Choose Recharge When:
+
+- You need enterprise-scale reliability
+- You process $50k+ MRR
+- You want advanced dunning features
+- You need B2B wholesale subscriptions
+- You have dedicated development resources
+- Budget allows $500+/month
+- Team has subscription expertise
+
+### Choose Appstle When:
+
+- You want simple setup (under 4 hours)
+- You're mid-market ($5k-$50k MRR)
+- You value modern customer portal
+- You want lower transaction fees
+- You prefer responsive support
+- Budget is $30-150/month
+- You're Shopify-focused
+
+## Store Type Recommendations
+
+### Supplements and Consumables: Recharge
+
+High-volume subscriptions with complex dunning needs. Recharge handles scale better.
+
+### Beauty and Skincare: Appstle
+
+Visual products with subscription boxes. Appstle portal design converts well.
+
+### Coffee and Food: Recharge
+
+High-frequency subscriptions (weekly deliveries). Recharge flexibility excels.
+
+### Apparel and Fashion: Appstle
+
+Seasonal subscription boxes. Appstle build-a-box features work well.
+
+### Pet Supplies: Recharge
+
+Auto-ship with quantity adjustments. Recharge handles complex rules.
+
+### Home and Cleaning: Appstle
+
+Monthly replenishment. Appstle covers core needs at lower cost.
+
+## Comparison Table
+
+| Feature | Recharge | Appstle |
+|---------|----------|---------|
+| Free Plan | Yes (1% transaction fee) | Yes (2% transaction fee up to $500 MRR) |
+| Paid Starting | $499/month (Pro) | $29/month (Pro up to $2,500 MRR) |
+| Transaction Fees | 1% (Standard), 0.5% (Pro) | 2% to 0% (tiered) |
+| Customer Portal | Functional | Modern design |
+| Dunning | Advanced (40-50% recovery) | Standard (35-45% recovery) |
+| Build-a-Box | Yes | Yes |
+| B2B Features | Yes (Pro+) | Limited |
+| Integrations | 100+ | 50+ |
+| Setup Time | 8-12 hours | 2-4 hours |
+| Support | Email (varies by plan) | Email + Chat |
+| Best For | Enterprise | Mid-market |
+
+## FAQ: Recharge vs Appstle
+
+### Q: Can I migrate from Recharge to Appstle or vice versa?
+
+A: Yes. Both platforms support subscription export/import. Export customer and subscription data, import to new platform. Plan 4-8 hours for migration.
+
+### Q: Are transaction fees avoidable?
+
+A: Appstle eliminates transaction fees at Premium ($149/month). Recharge charges 0.5-1% on all plans. Factor into pricing decisions.
+
+### Q: Do I need Recharge Pro for a $20k MRR store?
+
+A: Probably not. Appstle Growth ($79/month) or Premium ($149/month) covers most mid-market needs at lower cost.
+
+### Q: How important is dunning management?
+
+A: Very. Failed payment recovery adds 5-10% to MRR. Recharge leads in dunning sophistication.
+
+### Q: Can I use both Recharge and Appstle together?
+
+A: Not recommended. Running two subscription apps causes conflicts. Pick one and commit.
+
+## Migration Checklist
+
+Switching subscription platforms?
+
+1. **Export existing subscriptions** - Download customer and subscription data
+2. **Install new app** - Set up account, connect Shopify
+3. **Import subscriptions** - Upload data, map fields (customer, product, frequency, next charge)
+4. **Configure rules** - Set up subscription logic, dunning schedules
+5. **Design customer portal** - Match store branding
+6. **Test subscription flow** - Create test subscription, process payment
+7. **Email existing subscribers** - Notify of platform change
+8. **Monitor for 30 days** - Track churn, failed payments, MRR
+9. **Cancel old app** - After successful migration
+
+## Next Steps
+
+Ready to launch subscriptions?
+
+1. **Audit your products** - Which are subscription-eligible?
+2. **Pick your platform** - Recharge for enterprise, Appstle for mid-market
+3. **Set up subscription rules** - Configure frequency, swaps, dunning
+4. **Design customer portal** - Match store branding
+5. **Launch and monitor** - Track MRR, churn, recovery rates
+
+For more comparisons, check our guides on [Best Shopify Apps for Conversion](/blog/best-shopify-apps-conversion-2026), [Building Your Ecommerce Tech Stack](/blog/building-ecommerce-tech-stack), and [Best Email Marketing for Ecommerce](/blog/best-email-marketing-ecommerce).
+
+---
+
+**Stack Labs LLC** helps ecommerce brands build recurring revenue through subscriptions. Our team tests and compares subscription platforms so you don't have to.

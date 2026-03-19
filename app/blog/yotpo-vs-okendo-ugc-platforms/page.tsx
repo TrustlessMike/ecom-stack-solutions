@@ -1,388 +1,461 @@
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Y',
-  description: 'Y',
-};
-
-export default function Article() {
-  return (
-    <main className="min-h-screen py-16">
-      <div className="max-w-4xl mx-auto px-4">
-        <article className="prose prose-lg max-w-none">
-          <h1 className="text-4xl font-bold mb-4">Yotpo vs Okendo: UGC Platform Comparison 2026</h1>
-
-<p className="mb-4">User-generated content (UGC) drives ecommerce trust and conversions. Reviews, photos, and customer stories turn browsers into buyers. Yotpo and Okendo lead the UGC platform category with enterprise features beyond basic reviews.</p>
-
-<p className="mb-4">Both platforms collect reviews, display widgets, and syndicate content to ads. But they serve different store types and price points. Our team has analyzed both to help you choose the right UGC solution.</p>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4">Quick Answer: Enterprise vs Mid-Market</h2>
-
-<strong>Yotpo</strong> is the enterprise leader with 100,000+ customers including Steve Madden, Rebecca Minkoff, and Glossier. Full-featured but complex.
-
-<strong>Okendo</strong> serves mid-market stores with 10,000+ customers. Simpler setup, beautiful design, strong Shopify integration.
-
-<p className="mb-4">Choose Yotpo for enterprise scale. Choose Okendo for mid-market simplicity.</p>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4">Feature Comparison</h2>
-
-<h3 className="text-xl font-semibold mt-6 mb-3">Yotpo: Enterprise UGC Platform</h3>
-
-<p className="mb-4">Yotpo offers the most comprehensive UGC suite:</p>
-
-<strong>Core Features:</strong>
-<li>Product reviews with rich snippets</li>
-<li>Photo and video reviews</li>
-<li>Review request automation</li>
-<li>AI sentiment analysis</li>
-<li>Review moderation dashboard</li>
-<li>Shoppable Instagram galleries</li>
-<li>Loyalty program integration</li>
-<li>Referral marketing</li>
-<li>SMS marketing</li>
-<li>Facebook/Google ad syndication</li>
-<li>Multi-location review management</li>
-<li>API access for custom integrations</li>
-
-<strong>Strengths:</strong>
-<li>Most comprehensive feature set</li>
-<li>Enterprise-scale moderation</li>
-<li>AI-powered sentiment analysis</li>
-<li>Strong loyalty integration</li>
-<li>Extensive syndication options</li>
-<li>Multi-brand management</li>
-
-<strong>Weaknesses:</strong>
-<li>Complex setup (4-8 hours)</li>
-<li>Higher pricing at scale</li>
-<li>Steeper learning curve</li>
-<li>Support can be slow</li>
-<li>Feature bloat for smaller stores</li>
-
-<h3 className="text-xl font-semibold mt-6 mb-3">Okendo: Mid-Market UGC Specialist</h3>
-
-<p className="mb-4">Okendo focuses on review collection and display:</p>
-
-<strong>Core Features:</strong>
-<li>Automated review requests</li>
-<li>Photo and video reviews</li>
-<li>Customizable questionnaires</li>
-<li>Review widgets (15+ types)</li>
-<li>Google Shopping feed</li>
-<li>Facebook/Instagram integration</li>
-<li>Klaviyo integration</li>
-<li>Review syndication</li>
-<li>Quiz and survey builder</li>
-<li>Loyalty program integration</li>
-<li>Analytics dashboard</li>
-
-<strong>Strengths:</strong>
-<li>Beautiful widget designs</li>
-<li>Simple setup (1-2 hours)</li>
-<li>Strong Shopify integration</li>
-<li>Customizable review questions</li>
-<li>Responsive support</li>
-<li>Mid-market pricing</li>
-
-<strong>Weaknesses:</strong>
-<li>Less enterprise features</li>
-<li>Smaller integration ecosystem</li>
-<li>Limited multi-brand tools</li>
-<li>No native SMS marketing</li>
-<li>Fewer advanced moderation tools</li>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4">Pricing Comparison</h2>
-
-<h3 className="text-xl font-semibold mt-6 mb-3">Yotpo Pricing</h3>
-<li><strong>Free:</strong> Up to 50 orders/month, basic reviews</li>
-<li><strong>Growth:</strong> $19/month up to 200 orders/month</li>
-<li><strong>Premium:</strong> $49/month up to 500 orders/month</li>
-<li><strong>Pro:</strong> Custom pricing for 1,000+ orders/month</li>
-<li><strong>Enterprise:</strong> Custom pricing with dedicated support</li>
+---
+title: "Yotpo vs Okendo: UGC Platform Comparison 2026"
+description: "Yotpo and Okendo lead user-generated content platforms. We compare features, pricing, and which stores benefit most from each."
+date: "2026-03-19"
+author: "Stack Labs LLC"
+tags: ["Yotpo", "Okendo", "UGC", "Product Reviews", "Shopify"]
+---
+
+# Yotpo vs Okendo: UGC Platform Comparison 2026
+
+User-generated content (UGC) drives ecommerce trust and conversions. Reviews, photos, and customer stories turn browsers into buyers. Yotpo and Okendo lead the UGC platform category with enterprise features beyond basic reviews.
+
+Both platforms collect reviews, display widgets, and syndicate content to ads. But they serve different store types and price points. Our team has analyzed both to help you choose the right UGC solution.
+
+## Quick Answer: Enterprise vs Mid-Market
+
+**Yotpo** is the enterprise leader with 100,000+ customers including Steve Madden, Rebecca Minkoff, and Glossier. Full-featured but complex.
+
+**Okendo** serves mid-market stores with 10,000+ customers. Simpler setup, beautiful design, strong Shopify integration.
 
-<p className="mb-4">Yotpo charges by order volume. Enterprise plans start at $500+/month.</p>
+Choose Yotpo for enterprise scale. Choose Okendo for mid-market simplicity.
+
+## Feature Comparison
+
+### Yotpo: Enterprise UGC Platform
+
+Yotpo offers the most comprehensive UGC suite:
+
+**Core Features:**
+- Product reviews with rich snippets
+- Photo and video reviews
+- Review request automation
+- AI sentiment analysis
+- Review moderation dashboard
+- Shoppable Instagram galleries
+- Loyalty program integration
+- Referral marketing
+- SMS marketing
+- Facebook/Google ad syndication
+- Multi-location review management
+- API access for custom integrations
+
+**Strengths:**
+- Most comprehensive feature set
+- Enterprise-scale moderation
+- AI-powered sentiment analysis
+- Strong loyalty integration
+- Extensive syndication options
+- Multi-brand management
+
+**Weaknesses:**
+- Complex setup (4-8 hours)
+- Higher pricing at scale
+- Steeper learning curve
+- Support can be slow
+- Feature bloat for smaller stores
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Okendo Pricing</h3>
-<li><strong>Free:</strong> Up to 100 orders/month, basic widgets</li>
-<li><strong>Essential:</strong> $19/month up to 250 orders/month</li>
-<li><strong>Growth:</strong> $119/month up to 750 orders/month</li>
-<li><strong>Pro:</strong> $299/month up to 1,500 orders/month</li>
-<li><strong>Enterprise:</strong> Custom pricing for 3,000+ orders/month</li>
+### Okendo: Mid-Market UGC Specialist
 
-<p className="mb-4">Okendo pricing is higher at mid-market but includes more features.</p>
+Okendo focuses on review collection and display:
 
-<strong>Winner:</strong> Yotpo for small stores, Okendo for mid-market transparency
+**Core Features:**
+- Automated review requests
+- Photo and video reviews
+- Customizable questionnaires
+- Review widgets (15+ types)
+- Google Shopping feed
+- Facebook/Instagram integration
+- Klaviyo integration
+- Review syndication
+- Quiz and survey builder
+- Loyalty program integration
+- Analytics dashboard
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Review Collection</h2>
+**Strengths:**
+- Beautiful widget designs
+- Simple setup (1-2 hours)
+- Strong Shopify integration
+- Customizable review questions
+- Responsive support
+- Mid-market pricing
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Yotpo Collection</h3>
+**Weaknesses:**
+- Less enterprise features
+- Smaller integration ecosystem
+- Limited multi-brand tools
+- No native SMS marketing
+- Fewer advanced moderation tools
 
-<p className="mb-4">Yotpo sends review requests via:</p>
-<li>Post-purchase email (customizable timing)</li>
-<li>SMS requests (Premium+)</li>
-<li>In-store pop-ups</li>
-<li>Manual request triggers</li>
-<li>QR code for in-person sales</li>
+## Pricing Comparison
 
-<p className="mb-4">Request customization:</p>
-<li>Branding match</li>
-<li>Product images</li>
-<li>Incentive offers</li>
-<li>Custom questions</li>
-<li>Multi-language support</li>
+### Yotpo Pricing
 
-<p className="mb-4">Open rates: 16-20%</p>
-<p className="mb-4">Conversion to review: 6-10%</p>
+- **Free:** Up to 50 orders/month, basic reviews
+- **Growth:** $19/month up to 200 orders/month
+- **Premium:** $49/month up to 500 orders/month
+- **Pro:** Custom pricing for 1,000+ orders/month
+- **Enterprise:** Custom pricing with dedicated support
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Okendo Collection</h3>
+Yotpo charges by order volume. Enterprise plans start at $500+/month.
 
-<p className="mb-4">Okendo specializes in detailed review collection:</p>
-<li>Automated email requests</li>
-<li>Customizable questionnaires (5-10 questions)</li>
-<li>Photo and video upload</li>
-<li>Product variant tagging</li>
-<li>Review reminders (7, 14, 30 days)</li>
-<li>SMS requests (via Klaviyo integration)</li>
-
-<p className="mb-4">The questionnaire approach yields more detailed, actionable reviews.</p>
+### Okendo Pricing
 
-<p className="mb-4">Open rates: 18-22%</p>
-<p className="mb-4">Conversion to review: 8-12%</p>
+- **Free:** Up to 100 orders/month, basic widgets
+- **Essential:** $19/month up to 250 orders/month
+- **Growth:** $119/month up to 750 orders/month
+- **Pro:** $299/month up to 1,500 orders/month
+- **Enterprise:** Custom pricing for 3,000+ orders/month
 
-<strong>Winner:</strong> Okendo for review quality, Yotpo for channel variety
+Okendo pricing is higher at mid-market but includes more features.
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Widget Design and Display</h2>
+**Winner:** Yotpo for small stores, Okendo for mid-market transparency
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Yotpo Widgets</h3>
+## Review Collection
 
-<p className="mb-4">Yotpo offers 20+ widget types:</p>
-<li>Product page reviews</li>
-<li>Collection page widgets</li>
-<li>Homepage review carousel</li>
-<li>Review pop-up</li>
-<li>Floating review tab</li>
-<li>Instagram shoppable gallery</li>
-<li>Facebook shop integration</li>
-<li>Google Shopping feed</li>
-<li>On-site messaging</li>
+### Yotpo Collection
 
-<p className="mb-4">Design is functional but feels dated. Customization is extensive but requires technical setup.</p>
+Yotpo sends review requests via:
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Okendo Widgets</h3>
+- Post-purchase email (customizable timing)
+- SMS requests (Premium+)
+- In-store pop-ups
+- Manual request triggers
+- QR code for in-person sales
 
-<p className="mb-4">Okendo provides 15+ widget types:</p>
-<li>Photo review gallery</li>
-<li>Product page carousel</li>
-<li>Collection page grid</li>
-<li>Homepage testimonial slider</li>
-<li>Review pop-up</li>
-<li>Post-purchase thank you page</li>
-<li>Quiz results display</li>
-<li>Survey results</li>
-<li>UGC feed</li>
+Request customization:
+- Branding match
+- Product images
+- Incentive offers
+- Custom questions
+- Multi-language support
 
-<p className="mb-4">Design is modern and mobile-optimized. Widgets look premium out of the box.</p>
+Open rates: 16-20%
+Conversion to review: 6-10%
 
-<strong>Winner:</strong> Okendo for design, Yotpo for widget variety
+### Okendo Collection
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Moderation and AI Features</h2>
+Okendo specializes in detailed review collection:
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Yotpo Moderation</h3>
+- Automated email requests
+- Customizable questionnaires (5-10 questions)
+- Photo and video upload
+- Product variant tagging
+- Review reminders (7, 14, 30 days)
+- SMS requests (via Klaviyo integration)
 
-<p className="mb-4">Yotpo leads in moderation technology:</p>
-<li>AI sentiment analysis (auto-flag negative reviews)</li>
-<li>Profanity filter</li>
-<li>Spam detection</li>
-<li>Competitor review blocking</li>
-<li>Bulk moderation actions</li>
-<li>Multi-language moderation</li>
-<li>Review response templates</li>
-<li>Team collaboration tools</li>
+The questionnaire approach yields more detailed, actionable reviews.
 
-<p className="mb-4">AI sentiment analysis helps enterprise teams manage thousands of reviews.</p>
+Open rates: 18-22%
+Conversion to review: 8-12%
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Okendo Moderation</h3>
+**Winner:** Okendo for review quality, Yotpo for channel variety
 
-<p className="mb-4">Okendo provides:</p>
-<li>Manual approval queue</li>
-<li>Profanity filter</li>
-<li>Spam detection</li>
-<li>Bulk actions</li>
-<li>Email notifications</li>
-<li>Review response management</li>
+## Widget Design and Display
 
-<p className="mb-4">Moderation is effective but lacks AI automation.</p>
+### Yotpo Widgets
 
-<strong>Winner:</strong> Yotpo for enterprise moderation
+Yotpo offers 20+ widget types:
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Integrations and Ecosystem</h2>
+- Product page reviews
+- Collection page widgets
+- Homepage review carousel
+- Review pop-up
+- Floating review tab
+- Instagram shoppable gallery
+- Facebook shop integration
+- Google Shopping feed
+- On-site messaging
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Yotpo Integrations</h3>
+Design is functional but feels dated. Customization is extensive but requires technical setup.
 
-<p className="mb-4">Yotpo integrates with 100+ apps:</p>
-<li>Shopify (native)</li>
-<li>Klaviyo (email sync)</li>
-<li>Recharge (subscription reviews)</li>
-<li>Gorgias (support ticket context)</li>
-<li>Facebook/Google (ad syndication)</li>
-<li>PageFly (page builder)</li>
-<li>GemPages (page builder)</li>
-<li>Mailchimp (email sync)</li>
-<li>Salesforce (enterprise CRM)</li>
-<li>Magento (enterprise ecommerce)</li>
+### Okendo Widgets
 
-<p className="mb-4">Enterprise integrations (Salesforce, Magento) set Yotpo apart.</p>
+Okendo provides 15+ widget types:
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Okendo Integrations</h3>
+- Photo review gallery
+- Product page carousel
+- Collection page grid
+- Homepage testimonial slider
+- Review pop-up
+- Post-purchase thank you page
+- Quiz results display
+- Survey results
+- UGC feed
 
-<p className="mb-4">Okendo integrates with 50+ apps:</p>
-<li>Shopify (deep native)</li>
-<li>Klaviyo (review flows)</li>
-<li>Recharge (subscription reviews)</li>
-<li>Facebook/Google (syndication)</li>
-<li>PageFly (page builder)</li>
-<li>GemPages (page builder)</li>
-<li>Loyalty Lion (loyalty integration)</li>
-<li>Smile.io (loyalty integration)</li>
+Design is modern and mobile-optimized. Widgets look premium out of the box.
 
-<p className="mb-4">Focus is on Shopify ecosystem with strong mid-market apps.</p>
+**Winner:** Okendo for design, Yotpo for widget variety
 
-<strong>Winner:</strong> Yotpo for enterprise, Okendo for Shopify depth
+## Moderation and AI Features
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Loyalty and Referral Features</h2>
+### Yotpo Moderation
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Yotpo Loyalty</h3>
+Yotpo leads in moderation technology:
 
-<p className="mb-4">Yotpo offers native loyalty program:</p>
-<li>Points for purchases</li>
-<li>Points for reviews</li>
-<li>Points for social shares</li>
-<li>Referral rewards</li>
-<li>VIP tiers</li>
-<li>Redemption options</li>
-<li>Branded loyalty pages</li>
+- AI sentiment analysis (auto-flag negative reviews)
+- Profanity filter
+- Spam detection
+- Competitor review blocking
+- Bulk moderation actions
+- Multi-language moderation
+- Review response templates
+- Team collaboration tools
 
-<p className="mb-4">Loyalty is bundled with Premium+ plans.</p>
+AI sentiment analysis helps enterprise teams manage thousands of reviews.
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Okendo Loyalty</h3>
+### Okendo Moderation
 
-<p className="mb-4">Okendo integrates with loyalty apps:</p>
-<li>Smile.io integration</li>
-<li>Loyalty Lion integration</li>
-<li>Review points automation</li>
-<li>Referral tracking</li>
-<li>VIP tier sync</li>
+Okendo provides:
 
-<p className="mb-4">No native loyalty program. Requires third-party integration.</p>
+- Manual approval queue
+- Profanity filter
+- Spam detection
+- Bulk actions
+- Email notifications
+- Review response management
 
-<strong>Winner:</strong> Yotpo for native loyalty
+Moderation is effective but lacks AI automation.
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Analytics and Reporting</h2>
+**Winner:** Yotpo for enterprise moderation
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Yotpo Analytics</h3>
+## Integrations and Ecosystem
 
-<p className="mb-4">Yotpo provides:</p>
-<li>Review volume trends</li>
-<li>Star rating distribution</li>
-<li>Sentiment analysis dashboard</li>
-<li>Review-driven revenue</li>
-<li>UGC engagement metrics</li>
-<li>A/B test results</li>
-<li>Multi-location comparison</li>
-<li>Custom report builder</li>
+### Yotpo Integrations
 
-<p className="mb-4">Enterprise reporting is comprehensive but complex.</p>
+Yotpo integrates with 100+ apps:
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Okendo Analytics</h3>
+- Shopify (native)
+- Klaviyo (email sync)
+- Recharge (subscription reviews)
+- Gorgias (support ticket context)
+- Facebook/Google (ad syndication)
+- PageFly (page builder)
+- GemPages (page builder)
+- Mailchimp (email sync)
+- Salesforce (enterprise CRM)
+- Magento (enterprise ecommerce)
 
-<p className="mb-4">Okendo offers:</p>
-<li>Review collection rate</li>
-<li>Star rating trends</li>
-<li>Photo review percentage</li>
-<li>Review-driven revenue (via Klaviyo)</li>
-<li>Widget performance</li>
-<li>Product-level insights</li>
+Enterprise integrations (Salesforce, Magento) set Yotpo apart.
 
-<p className="mb-4">Reporting is simpler but actionable.</p>
+### Okendo Integrations
 
-<strong>Winner:</strong> Yotpo for depth, Okendo for simplicity
+Okendo integrates with 50+ apps:
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Customer Support</h2>
+- Shopify (deep native)
+- Klaviyo (review flows)
+- Recharge (subscription reviews)
+- Facebook/Google (syndication)
+- PageFly (page builder)
+- GemPages (page builder)
+- Loyalty Lion (loyalty integration)
+- Smile.io (loyalty integration)
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Yotpo Support</h3>
-<li>Email support (24-48 hour response)</li>
-<li>Knowledge base</li>
-<li>Video tutorials</li>
-<li>Account manager (Premium+)</li>
-<li>Onboarding assistance (Enterprise)</li>
-<li>No live chat on lower plans</li>
+Focus is on Shopify ecosystem with strong mid-market apps.
 
-<p className="mb-4">Support quality varies by plan tier.</p>
+**Winner:** Yotpo for enterprise, Okendo for Shopify depth
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Okendo Support</h3>
-<li>Email support (24 hour response)</li>
-<li>Live chat (business hours)</li>
-<li>Knowledge base</li>
-<li>Video tutorials</li>
-<li>Onboarding calls (Growth+)</li>
-<li>Dedicated Slack channel (Enterprise)</li>
+## Loyalty and Referral Features
 
-<p className="mb-4">Support is more responsive across all plans.</p>
+### Yotpo Loyalty
 
-<strong>Winner:</strong> Okendo for support quality
+Yotpo offers native loyalty program:
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Best Use Cases</h2>
+- Points for purchases
+- Points for reviews
+- Points for social shares
+- Referral rewards
+- VIP tiers
+- Redemption options
+- Branded loyalty pages
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Choose Yotpo When:</h3>
-<li>You need enterprise-scale moderation</li>
-<li>You manage multiple brands/locations</li>
-<li>AI sentiment analysis matters</li>
-<li>You want native loyalty program</li>
-<li>You need Salesforce/Magento integration</li>
-<li>Budget allows $200+/month</li>
-<li>Team has dedicated marketing resources</li>
+Loyalty is bundled with Premium+ plans.
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Choose Okendo When:</h3>
-<li>You want beautiful review displays</li>
-<li>You need simple setup (under 2 hours)</li>
-<li>Customizable review questions matter</li>
-<li>You're mid-market ($20k-$100k/month)</li>
-<li>You value responsive support</li>
-<li>Budget is $50-300/month</li>
-<li>You're Shopify-focused</li>
+### Okendo Loyalty
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Store Type Recommendations</h2>
+Okendo integrates with loyalty apps:
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Fashion and Beauty: Okendo</h3>
+- Smile.io integration
+- Loyalty Lion integration
+- Review points automation
+- Referral tracking
+- VIP tier sync
 
-<p className="mb-4">Visual reviews and questionnaires about fit, color accuracy, and texture. Beautiful galleries showcase products.</p>
+No native loyalty program. Requires third-party integration.
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Electronics and Tech: Yotpo</h3>
+**Winner:** Yotpo for native loyalty
 
-<p className="mb-4">Detailed reviews about features, performance, and durability. Enterprise moderation handles high volume.</p>
+## Analytics and Reporting
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Home and Furniture: Okendo</h3>
+### Yotpo Analytics
 
-<p className="mb-4">Customer photos show products in real spaces. Questionnaires about assembly, quality, and sizing.</p>
+Yotpo provides:
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Supplements and Health: Yotpo</h3>
+- Review volume trends
+- Star rating distribution
+- Sentiment analysis dashboard
+- Review-driven revenue
+- UGC engagement metrics
+- A/B test results
+- Multi-location comparison
+- Custom report builder
 
-<p className="mb-4">Detailed reviews about results and effectiveness. AI sentiment analysis flags medical claims.</p>
+Enterprise reporting is comprehensive but complex.
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Jewelry and Accessories: Okendo</h3>
+### Okendo Analytics
 
-<p className="mb-4">Photo reviews show how pieces look when worn. Visual focus matches product type.</p>
+Okendo offers:
 
-<h3 className="text-xl font-semibold mt-6 mb-3">Food and Beverage: Yotpo</h3>
+- Review collection rate
+- Star rating trends
+- Photo review percentage
+- Review-driven revenue (via Klaviyo)
+- Widget performance
+- Product-level insights
 
-<p className="mb-4">High-volume review collection. Multi-location management for retail + DTC.</p>
+Reporting is simpler but actionable.
 
-<h2 className="text-2xl font-semibold mt-8 mb-4">Comparison Table</h2>
+**Winner:** Yotpo for depth, Okendo for simplicity
 
-<p className="mb-4">| Feature | Yotpo | Okendo |</p>
-<p className="mb-4">|</p>
-        </article>
-      </div>
-    </main>
-  );
-}
+## Customer Support
+
+### Yotpo Support
+
+- Email support (24-48 hour response)
+- Knowledge base
+- Video tutorials
+- Account manager (Premium+)
+- Onboarding assistance (Enterprise)
+- No live chat on lower plans
+
+Support quality varies by plan tier.
+
+### Okendo Support
+
+- Email support (24 hour response)
+- Live chat (business hours)
+- Knowledge base
+- Video tutorials
+- Onboarding calls (Growth+)
+- Dedicated Slack channel (Enterprise)
+
+Support is more responsive across all plans.
+
+**Winner:** Okendo for support quality
+
+## Best Use Cases
+
+### Choose Yotpo When:
+
+- You need enterprise-scale moderation
+- You manage multiple brands/locations
+- AI sentiment analysis matters
+- You want native loyalty program
+- You need Salesforce/Magento integration
+- Budget allows $200+/month
+- Team has dedicated marketing resources
+
+### Choose Okendo When:
+
+- You want beautiful review displays
+- You need simple setup (under 2 hours)
+- Customizable review questions matter
+- You're mid-market ($20k-$100k/month)
+- You value responsive support
+- Budget is $50-300/month
+- You're Shopify-focused
+
+## Store Type Recommendations
+
+### Fashion and Beauty: Okendo
+
+Visual reviews and questionnaires about fit, color accuracy, and texture. Beautiful galleries showcase products.
+
+### Electronics and Tech: Yotpo
+
+Detailed reviews about features, performance, and durability. Enterprise moderation handles high volume.
+
+### Home and Furniture: Okendo
+
+Customer photos show products in real spaces. Questionnaires about assembly, quality, and sizing.
+
+### Supplements and Health: Yotpo
+
+Detailed reviews about results and effectiveness. AI sentiment analysis flags medical claims.
+
+### Jewelry and Accessories: Okendo
+
+Photo reviews show how pieces look when worn. Visual focus matches product type.
+
+### Food and Beverage: Yotpo
+
+High-volume review collection. Multi-location management for retail + DTC.
+
+## Comparison Table
+
+| Feature | Yotpo | Okendo |
+|---------|-------|--------|
+| Free Plan | 50 orders/month | 100 orders/month |
+| Paid Starting | $19/month (200 orders) | $19/month (250 orders) |
+| Mid-Market | $49/month (500 orders) | $119/month (750 orders) |
+| Enterprise | Custom (1,000+ orders) | Custom (3,000+ orders) |
+| Photo Reviews | All paid plans | All paid plans |
+| Video Reviews | All paid plans | All paid plans |
+| AI Sentiment | Premium+ only | No |
+| Native Loyalty | Yes (Premium+) | No (integrations) |
+| Widget Design | Functional | Premium |
+| Setup Time | 4-8 hours | 1-2 hours |
+| Support | Email (varies by plan) | Email + Chat |
+| Best For | Enterprise | Mid-market |
+
+## FAQ: Yotpo vs Okendo
+
+### Q: Can I migrate from Yotpo to Okendo or vice versa?
+
+A: Yes. Both platforms support review export/import. Export reviews as CSV, import to new platform. Plan 3-4 hours for migration.
+
+### Q: Do I need enterprise features for a $50k/month store?
+
+A: Probably not. Okendo Growth ($119/month) covers most mid-market needs. Yotpo Premium ($49/month) works if you want AI features.
+
+### Q: How important are customizable review questions?
+
+A: Very. Questions about sizing, quality, and use cases yield more actionable reviews. Okendo excels here.
+
+### Q: Can I use both Yotpo and Okendo together?
+
+A: Not recommended. Running two review apps causes duplicate requests. Pick one and commit.
+
+### Q: Does Yotpo's AI sentiment analysis work well?
+
+A: Yes for large volumes. Auto-flags negative reviews for priority response. Useful at 500+ reviews/month.
+
+## Migration Checklist
+
+Switching UGC platforms?
+
+1. **Export existing reviews** - Download CSV with all fields
+2. **Install new app** - Set up account, connect Shopify
+3. **Import reviews** - Upload CSV, map fields (reviewer, rating, text, date, photos)
+4. **Design widgets** - Match store branding
+5. **Update email templates** - Customize review requests
+6. **Configure questionnaires** - Set up custom questions (Okendo)
+7. **Test on product pages** - Check desktop and mobile display
+8. **Monitor for 30 days** - Track review volume and quality
+9. **Cancel old app** - After successful migration
+
+## Next Steps
+
+Ready to collect more UGC?
+
+1. **Audit your current review strategy** - How many reviews per month?
+2. **Pick your platform** - Yotpo for enterprise, Okendo for mid-market
+3. **Set up automated requests** - Configure post-purchase emails
+4. **Design your widgets** - Match store branding
+5. **Monitor and optimize** - Track review velocity and conversion lift
+
+For more comparisons, check our guides on [Judge.me vs Loox](/blog/judge-me-vs-loox-review-apps), [Best Review Apps for Shopify](/blog/best-review-apps-shopify), and [Best Shopify Apps for Conversion](/blog/best-shopify-apps-conversion-2026).
+
+---
+
+**Stack Labs LLC** helps ecommerce brands leverage user-generated content for trust and conversions. Our team tests and compares UGC platforms so you don't have to.

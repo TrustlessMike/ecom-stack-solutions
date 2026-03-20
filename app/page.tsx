@@ -44,7 +44,7 @@ export default function Home() {
       {/* Hero - Vibrant Green + Emerald ecommerce gradient */}
       <section className="bg-gradient-to-br from-emerald-600 via-green-600 to-teal-700 text-white py-24 relative overflow-hidden">
         {/* Animated wave pattern */}
-        <div className="absolute bottom-0 left-0 right-0 h-20 bg-white/10" style="clip-path: polygon(0 100%, 100 100%, 100% 0);"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-white/10" style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 0)" }}></div>
         
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="inline-block bg-white/20 backdrop-blur px-4 py-2 rounded-full text-white text-sm font-medium mb-6 border border-white/30">

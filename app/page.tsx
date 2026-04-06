@@ -1,5 +1,8 @@
 import Link from 'next/link';
-import { CheckCircle, BarChart3, ShoppingBag, Shield, Clock, TrendingUp, ArrowRight, Star, Package, Zap } from 'lucide-react';
+import { CheckCircle, BarChart3, ShoppingBag, Shield, Clock, TrendingUp, ArrowRight, Star, Package, Zap, ChevronDown } from 'lucide-react';
+import ScrollReveal from '../components/ScrollReveal';
+import { PlatformsIcon, EmailIcon, ReviewsIcon, AnalyticsIcon, ShippingIcon, ConversionIcon } from '../components/CategoryIcons';
+import HeroVisual from '../components/HeroVisual';
 
 export const metadata = {
   title: 'Ecommerce Stack Solutions | Best Ecommerce Tools Reviews 2026',
@@ -23,6 +26,8 @@ const jsonLd = {
     "url": "https://ecomstacksolutions.com"
   }
 };
+
+const categoryIcons = [PlatformsIcon, EmailIcon, ReviewsIcon, AnalyticsIcon, ShippingIcon, ConversionIcon];
 
 const categories = [
   {
@@ -105,34 +110,57 @@ export default function Home() {
         <div className="absolute bottom-[-100px] left-[-100px] w-[400px] h-[400px] bg-[rgba(200,255,0,0.03)] rounded-full blur-3xl" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
-          <div className="max-w-4xl">
-            <div className="inline-flex items-center gap-2 bg-[rgba(200,255,0,0.08)] text-[#c8ff00] px-4 py-1.5 rounded-full text-sm font-semibold mb-8 border border-[rgba(200,255,0,0.2)]">
-              <Star className="h-4 w-4 fill-[#c8ff00]" />
-              Trusted by 50,000+ store owners
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+            <div className="flex-1 max-w-4xl lg:max-w-none">
+              <ScrollReveal direction="up" duration={400}>
+                <div className="inline-flex items-center gap-2 bg-[rgba(200,255,0,0.08)] text-[#c8ff00] px-4 py-1.5 rounded-full text-sm font-semibold mb-8 border border-[rgba(200,255,0,0.2)]">
+                  <Star className="h-4 w-4 fill-[#c8ff00]" />
+                  Trusted by 50,000+ store owners
+                </div>
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={50} duration={400}>
+                <h1 className="text-5xl lg:text-7xl font-extrabold mb-6 leading-[1.05] tracking-tight text-[#e8e6e3]" style={{ fontFamily: 'var(--font-display)' }}>
+                  The tools your
+                  <br />
+                  store <span className="text-[#c8ff00]">actually</span> needs.
+                </h1>
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={100} duration={400}>
+                <p className="text-xl text-[#a1a09e] mb-10 leading-relaxed max-w-2xl">
+                  Independent, unbiased reviews of the best ecommerce tools for online stores.
+                  Find the right platforms, email marketing, reviews, and analytics solutions.
+                </p>
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={150} duration={400}>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link
+                    href="/pillar/ecommerce-platforms"
+                    className="btn-lime btn-pulse-glow px-8 py-4 text-lg gap-2"
+                  >
+                    Browse Platforms
+                    <ArrowRight className="h-5 w-5" />
+                  </Link>
+                  <Link
+                    href="/pillar/email-marketing"
+                    className="btn-outline-lime px-8 py-4 text-lg"
+                  >
+                    Email Marketing
+                  </Link>
+                </div>
+              </ScrollReveal>
             </div>
-            <h1 className="text-5xl lg:text-7xl font-extrabold mb-6 leading-[1.05] tracking-tight text-[#e8e6e3]" style={{ fontFamily: 'var(--font-display)' }}>
-              The tools your
-              <br />
-              store <span className="text-[#c8ff00]">actually</span> needs.
-            </h1>
-            <p className="text-xl text-[#a1a09e] mb-10 leading-relaxed max-w-2xl">
-              Independent, unbiased reviews of the best ecommerce tools for online stores.
-              Find the right platforms, email marketing, reviews, and analytics solutions.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/pillar/ecommerce-platforms"
-                className="btn-lime px-8 py-4 text-lg gap-2"
-              >
-                Browse Platforms
-                <ArrowRight className="h-5 w-5" />
-              </Link>
-              <Link
-                href="/pillar/email-marketing"
-                className="btn-outline-lime px-8 py-4 text-lg"
-              >
-                Email Marketing
-              </Link>
+
+            {/* Hero Visual */}
+            <ScrollReveal direction="right" delay={200} duration={600} className="flex-1 hidden lg:block">
+              <HeroVisual />
+            </ScrollReveal>
+          </div>
+
+          {/* Scroll indicator */}
+          <div className="flex justify-center mt-16 lg:mt-20">
+            <div className="scroll-indicator flex flex-col items-center gap-1 text-[#52525b]">
+              <span className="text-xs font-medium tracking-wide uppercase">Scroll</span>
+              <ChevronDown className="h-5 w-5" />
             </div>
           </div>
         </div>
@@ -153,14 +181,12 @@ export default function Home() {
               { value: '100%', label: 'Unbiased Reviews', icon: Shield },
               { value: '2026', label: 'Latest Data', icon: Clock },
             ].map((stat, i) => (
-              <div
-                key={i}
-                className="text-center"
-                style={{ animation: `fadeInUp 0.6s ease-out ${i * 0.1}s both` }}
-              >
-                <div className="stat-number text-4xl lg:text-5xl mb-2">{stat.value}</div>
-                <div className="text-sm text-[#a1a09e] font-medium">{stat.label}</div>
-              </div>
+              <ScrollReveal key={i} direction="up" delay={i * 50} duration={400}>
+                <div className="text-center">
+                  <div className="stat-number text-4xl lg:text-5xl mb-2">{stat.value}</div>
+                  <div className="text-sm text-[#a1a09e] font-medium">{stat.label}</div>
+                </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -171,35 +197,39 @@ export default function Home() {
           ============================================ */}
       <section className="py-20 bg-[#0a0a0a] dot-grid relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12">
-            <h2 className="text-3xl lg:text-4xl font-extrabold text-[#e8e6e3] mb-3 tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
-              Browse by Category
-            </h2>
-            <p className="text-[#a1a09e] text-lg">Find the right ecommerce solutions for your online store</p>
-          </div>
+          <ScrollReveal direction="up" duration={400}>
+            <div className="mb-12">
+              <h2 className="text-3xl lg:text-4xl font-extrabold text-[#e8e6e3] mb-3 tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
+                Browse by Category
+              </h2>
+              <p className="text-[#a1a09e] text-lg">Find the right ecommerce solutions for your online store</p>
+            </div>
+          </ScrollReveal>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {categories.map((cat, i) => {
               const Icon = cat.icon;
+              const CategorySvg = categoryIcons[i];
               return (
-                <Link
-                  key={i}
-                  href={cat.href}
-                  className={`group card-dark p-6 block ${cat.featured ? 'md:col-span-2 lg:col-span-3 border-[rgba(200,255,0,0.15)]' : ''}`}
-                >
-                  <div className="flex items-start gap-4">
-                    <div className={`flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center ${cat.featured ? 'bg-[#c8ff00] text-[#0a0a0a]' : 'bg-[rgba(200,255,0,0.1)] text-[#c8ff00]'} transition-colors group-hover:bg-[#c8ff00] group-hover:text-[#0a0a0a]`}>
-                      <Icon className="h-6 w-6" />
+                <ScrollReveal key={i} direction="up" delay={i * 50} duration={400}>
+                  <Link
+                    href={cat.href}
+                    className={`group card-dark card-hover-glow p-6 block ${cat.featured ? 'md:col-span-2 lg:col-span-3 border-[rgba(200,255,0,0.15)]' : ''}`}
+                  >
+                    <div className="flex items-start gap-4">
+                      <div className={`flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center ${cat.featured ? 'bg-[#c8ff00] text-[#0a0a0a]' : 'bg-[rgba(200,255,0,0.1)] text-[#c8ff00]'} transition-colors group-hover:bg-[#c8ff00] group-hover:text-[#0a0a0a]`}>
+                        <CategorySvg className="w-8 h-8" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-lg font-bold text-[#e8e6e3] mb-1 flex items-center gap-2" style={{ fontFamily: 'var(--font-display)' }}>
+                          {cat.title}
+                          <ArrowRight className="h-4 w-4 text-[#52525b] group-hover:text-[#c8ff00] group-hover:translate-x-1 transition-all" />
+                        </h3>
+                        <p className="text-[#a1a09e] text-sm leading-relaxed">{cat.description}</p>
+                      </div>
                     </div>
-                    <div className="flex-1 min-w-0">
-                      <h3 className="text-lg font-bold text-[#e8e6e3] mb-1 flex items-center gap-2" style={{ fontFamily: 'var(--font-display)' }}>
-                        {cat.title}
-                        <ArrowRight className="h-4 w-4 text-[#52525b] group-hover:text-[#c8ff00] group-hover:translate-x-1 transition-all" />
-                      </h3>
-                      <p className="text-[#a1a09e] text-sm leading-relaxed">{cat.description}</p>
-                    </div>
-                  </div>
-                </Link>
+                  </Link>
+                </ScrollReveal>
               );
             })}
           </div>
@@ -214,40 +244,45 @@ export default function Home() {
           ============================================ */}
       <section className="py-20 bg-[#fafaf9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12">
-            <h2 className="text-3xl lg:text-4xl font-extrabold text-[#141413] mb-3 tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
-              Latest Articles
-            </h2>
-            <p className="text-[#52525b] text-lg">Fresh insights and comparisons to help you choose the right ecommerce tools</p>
-          </div>
+          <ScrollReveal direction="up" duration={400}>
+            <div className="mb-12">
+              <h2 className="text-3xl lg:text-4xl font-extrabold text-[#141413] mb-3 tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
+                Latest Articles
+              </h2>
+              <p className="text-[#52525b] text-lg">Fresh insights and comparisons to help you choose the right ecommerce tools</p>
+            </div>
+          </ScrollReveal>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {articles.map((article, i) => (
-              <Link
-                key={i}
-                href={article.href}
-                className="group block bg-white rounded-xl border border-[#e4e4e0] overflow-hidden hover:border-[#c8ff00] hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
-              >
-                <div className="p-5">
-                  <span className="inline-block px-3 py-1 bg-[#0a0a0a] text-[#c8ff00] text-xs font-bold rounded-full mb-3 tracking-wide uppercase">
-                    {article.category}
-                  </span>
-                  <h3 className="text-base font-bold mb-2 text-[#141413] group-hover:text-[#0a0a0a] transition leading-snug" style={{ fontFamily: 'var(--font-display)' }}>
-                    {article.title}
-                  </h3>
-                  <p className="text-[#52525b] text-sm mb-3 leading-relaxed line-clamp-2">{article.excerpt}</p>
-                  <p className="text-[#a1a09e] text-xs font-medium">{article.date}</p>
-                </div>
-              </Link>
+              <ScrollReveal key={i} direction="up" delay={i * 50} duration={400}>
+                <Link
+                  href={article.href}
+                  className="group block bg-white rounded-xl border border-[#e4e4e0] overflow-hidden hover:border-[#c8ff00] hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.03]"
+                >
+                  <div className="p-5">
+                    <span className="inline-block px-3 py-1 bg-[#0a0a0a] text-[#c8ff00] text-xs font-bold rounded-full mb-3 tracking-wide uppercase">
+                      {article.category}
+                    </span>
+                    <h3 className="text-base font-bold mb-2 text-[#141413] group-hover:text-[#0a0a0a] transition leading-snug" style={{ fontFamily: 'var(--font-display)' }}>
+                      {article.title}
+                    </h3>
+                    <p className="text-[#52525b] text-sm mb-3 leading-relaxed line-clamp-2">{article.excerpt}</p>
+                    <p className="text-[#a1a09e] text-xs font-medium">{article.date}</p>
+                  </div>
+                </Link>
+              </ScrollReveal>
             ))}
           </div>
 
-          <div className="text-center mt-12">
-            <Link href="/blog" className="btn-dark px-6 py-3 text-base gap-2">
-              View All Articles
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
+          <ScrollReveal direction="up" delay={300} duration={400}>
+            <div className="text-center mt-12">
+              <Link href="/blog" className="btn-dark px-6 py-3 text-base gap-2">
+                View All Articles
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -262,30 +297,33 @@ export default function Home() {
         />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
-          <div className="mb-12">
-            <h2 className="text-3xl lg:text-4xl font-extrabold text-[#e8e6e3] mb-3 tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
-              Head-to-Head <span className="text-[#c8ff00]">Comparisons</span>
-            </h2>
-            <p className="text-[#a1a09e] text-lg">Direct comparisons to help you make the right choice</p>
-          </div>
+          <ScrollReveal direction="up" duration={400}>
+            <div className="mb-12">
+              <h2 className="text-3xl lg:text-4xl font-extrabold text-[#e8e6e3] mb-3 tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
+                Head-to-Head <span className="text-[#c8ff00]">Comparisons</span>
+              </h2>
+              <p className="text-[#a1a09e] text-lg">Direct comparisons to help you make the right choice</p>
+            </div>
+          </ScrollReveal>
 
           <div className="grid md:grid-cols-2 gap-5">
             {comparisons.map((comp, i) => (
-              <Link
-                key={i}
-                href={comp.href}
-                className="group card-dark p-6 block"
-              >
-                <div className="flex items-center justify-between mb-2">
-                  <h3 className="text-lg font-bold text-[#e8e6e3]" style={{ fontFamily: 'var(--font-display)' }}>
-                    {comp.title}
-                  </h3>
-                  <span className="text-xs font-bold px-2 py-1 bg-[rgba(255,107,74,0.15)] text-[#ff6b4a] rounded-full uppercase tracking-wide">
-                    VS
-                  </span>
-                </div>
-                <p className="text-[#a1a09e] text-sm leading-relaxed">{comp.excerpt}</p>
-              </Link>
+              <ScrollReveal key={i} direction="up" delay={i * 50} duration={400}>
+                <Link
+                  href={comp.href}
+                  className="group card-dark card-hover-glow p-6 block"
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-lg font-bold text-[#e8e6e3]" style={{ fontFamily: 'var(--font-display)' }}>
+                      {comp.title}
+                    </h3>
+                    <span className="text-xs font-bold px-2 py-1 bg-[rgba(255,107,74,0.15)] text-[#ff6b4a] rounded-full uppercase tracking-wide">
+                      VS
+                    </span>
+                  </div>
+                  <p className="text-[#a1a09e] text-sm leading-relaxed">{comp.excerpt}</p>
+                </Link>
+              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -302,12 +340,14 @@ export default function Home() {
           ============================================ */}
       <section className="py-20 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-extrabold text-[#e8e6e3] mb-3 tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
-              Why Trust Our Reviews?
-            </h2>
-            <p className="text-[#a1a09e] text-lg max-w-2xl mx-auto">We&apos;re committed to providing honest, data-driven insights</p>
-          </div>
+          <ScrollReveal direction="up" duration={400}>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-extrabold text-[#e8e6e3] mb-3 tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
+                Why Trust Our Reviews?
+              </h2>
+              <p className="text-[#a1a09e] text-lg max-w-2xl mx-auto">We&apos;re committed to providing honest, data-driven insights</p>
+            </div>
+          </ScrollReveal>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -329,13 +369,15 @@ export default function Home() {
             ].map((item, i) => {
               const Icon = item.icon;
               return (
-                <div key={i} className="text-center p-8 card-dark">
-                  <div className="inline-flex items-center justify-center w-14 h-14 bg-[rgba(200,255,0,0.1)] rounded-xl mb-5">
-                    <Icon className="h-7 w-7 text-[#c8ff00]" />
+                <ScrollReveal key={i} direction="up" delay={i * 50} duration={400}>
+                  <div className="text-center p-8 card-dark card-hover-glow">
+                    <div className="inline-flex items-center justify-center w-14 h-14 bg-[rgba(200,255,0,0.1)] rounded-xl mb-5">
+                      <Icon className="h-7 w-7 text-[#c8ff00]" />
+                    </div>
+                    <h3 className="text-lg font-bold text-[#e8e6e3] mb-2" style={{ fontFamily: 'var(--font-display)' }}>{item.title}</h3>
+                    <p className="text-[#a1a09e] text-sm leading-relaxed">{item.desc}</p>
                   </div>
-                  <h3 className="text-lg font-bold text-[#e8e6e3] mb-2" style={{ fontFamily: 'var(--font-display)' }}>{item.title}</h3>
-                  <p className="text-[#a1a09e] text-sm leading-relaxed">{item.desc}</p>
-                </div>
+                </ScrollReveal>
               );
             })}
           </div>
@@ -353,23 +395,29 @@ export default function Home() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[rgba(200,255,0,0.04)] rounded-full blur-3xl" />
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-28 text-center">
-          <h2 className="text-3xl lg:text-5xl font-extrabold mb-6 text-[#e8e6e3] tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
-            Ready to find the right
-            <br />
-            <span className="text-[#c8ff00]">ecommerce tools?</span>
-          </h2>
-          <p className="text-lg text-[#a1a09e] mb-10 max-w-2xl mx-auto">
-            Start with our most popular guides and comparisons. Everything you need to make an informed decision.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/pillar/ecommerce-platforms" className="btn-lime px-8 py-4 text-lg gap-2">
-              Start with Platforms
-              <ArrowRight className="h-5 w-5" />
-            </Link>
-            <Link href="/blog" className="btn-outline-lime px-8 py-4 text-lg">
-              Browse All Articles
-            </Link>
-          </div>
+          <ScrollReveal direction="up" duration={400}>
+            <h2 className="text-3xl lg:text-5xl font-extrabold mb-6 text-[#e8e6e3] tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
+              Ready to find the right
+              <br />
+              <span className="text-[#c8ff00]">ecommerce tools?</span>
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal direction="up" delay={50} duration={400}>
+            <p className="text-lg text-[#a1a09e] mb-10 max-w-2xl mx-auto">
+              Start with our most popular guides and comparisons. Everything you need to make an informed decision.
+            </p>
+          </ScrollReveal>
+          <ScrollReveal direction="up" delay={100} duration={400}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/pillar/ecommerce-platforms" className="btn-lime btn-pulse-glow px-8 py-4 text-lg gap-2">
+                Start with Platforms
+                <ArrowRight className="h-5 w-5" />
+              </Link>
+              <Link href="/blog" className="btn-outline-lime px-8 py-4 text-lg">
+                Browse All Articles
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
     </main>

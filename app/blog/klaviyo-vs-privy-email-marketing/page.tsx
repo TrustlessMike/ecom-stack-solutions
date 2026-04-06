@@ -1,494 +1,293 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export const metadata = {
-  title: "Klaviyo vs Privy: Email Marketing Comparison 2026",
-  description: "Klaviyo and Privy both serve Shopify stores, but which should you choose? We compare features, pricing, and best use cases.",
+  title: 'Klaviyo vs Privy: Email Marketing Comparison 2026',
+  description: 'Klaviyo and Privy both serve Shopify stores, but which should you choose? We compare features, pricing, and best use cases.',
+  keywords: 'klaviyo vs privy, shopify email marketing, klaviyo review, privy review, email marketing comparison 2026',
 };
 
-export default function KlaviyoVsPrivyEmailMarketing() {
+export default function KlaviyoVsPrivy() {
   return (
     <main className="min-h-screen py-16">
       <div className="max-w-4xl mx-auto px-4">
         <article className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold mb-4">Klaviyo vs Privy: Email Marketing Comparison 2026</h1>
-          
 
-          <p className="mb-4">Klaviyo and Privy are two of the most popular email marketing apps for Shopify. Both integrate deeply with the platform, both offer automation, and both claim to drive revenue. But they serve different purposes.</p>
-
-          <p className="mb-4">Our team has analyzed both platforms across features, pricing, ease of use, and real-world performance. This comparison helps you choose the right tool for your store's stage and goals.</p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">Quick Answer: They're Not Direct Competitors</h2>
-
-          <p className="mb-4"><strong>Privy</strong> focuses on on-site conversion tools: pop-ups, spin wheels, and exit-intent campaigns. Email is secondary.</p>
-
-          <p className="mb-4"><strong>Klaviyo</strong> is a full email and SMS marketing platform with advanced segmentation, predictive analytics, and complex automation.</p>
-
-          <p className="mb-4">Many stores use both together: Privy for list building, Klaviyo for email marketing.</p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">Feature Comparison</h2>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Privy: Pop-ups First, Email Second</h3>
-
-          <p className="mb-4">Privy built its reputation on pop-ups. Email came later as an add-on.</p>
-
-          <p className="mb-4"><strong>Core Features:</strong></p>
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Drag-and-drop pop-up builder</li>
-            <li>Exit-intent technology</li>
-            <li>A/B testing for campaigns</li>
-            <li>Spin wheels and gamification</li>
-            <li>SMS and email capture</li>
-            <li>Basic email broadcasts</li>
-            <li>Simple automation flows</li>
-          </ul>
-
-          <p className="mb-4"><strong>Strengths:</strong></p>
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Best-in-class pop-up builder</li>
-            <li>Easy setup (15 minutes to launch)</li>
-            <li>Great for list building</li>
-            <li>Affordable at small scale</li>
-            <li>Mobile-optimized templates</li>
-          </ul>
-
-          <p className="mb-4"><strong>Weaknesses:</strong></p>
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Limited email design options</li>
-            <li>Basic segmentation</li>
-            <li>No predictive analytics</li>
-            <li>Fewer integrations than Klaviyo</li>
-            <li>Automation flows are simple</li>
-          </ul>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Klaviyo: Email and SMS Platform</h3>
-
-          <p className="mb-4">Klaviyo is built for serious email marketers who want advanced features.</p>
-
-          <p className="mb-4"><strong>Core Features:</strong></p>
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Advanced customer segmentation</li>
-            <li>100+ pre-built email flows</li>
-            <li>SMS marketing included</li>
-            <li>Predictive analytics (LTV, churn, purchase probability)</li>
-            <li>Attribution reporting</li>
-            <li>Deep Shopify integration</li>
-            <li>300+ app integrations</li>
-            <li>Landing page builder</li>
-          </ul>
-
-          <p className="mb-4"><strong>Strengths:</strong></p>
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Industry-leading segmentation</li>
-            <li>Powerful automation builder</li>
-            <li>Predictive customer analytics</li>
-            <li>Revenue attribution tracking</li>
-            <li>Enterprise-scale deliverability</li>
-            <li>Extensive integration ecosystem</li>
-          </ul>
-
-          <p className="mb-4"><strong>Weaknesses:</strong></p>
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Steeper learning curve</li>
-            <li>Pricing scales with list size</li>
-            <li>Overkill for simple stores</li>
-            <li>Email-only focus (no pop-ups without integration)</li>
-          </ul>
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">Pricing Comparison</h2>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Privy Pricing</h3>
-
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li><strong>Free:</strong> Up to 100 contacts, unlimited pop-ups</li>
-            <li><strong>Growth:</strong> $24/month for unlimited contacts</li>
-            <li><strong>Professional:</strong> $45/month with advanced features</li>
-            <li><strong>Agency:</strong> Custom pricing</li>
-          </ul>
-
-          <p className="mb-4">Privy charges flat monthly fees regardless of list size. This makes it predictable for growing stores.</p>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Klaviyo Pricing</h3>
-
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li><strong>Free:</strong> Up to 250 contacts, 500 SMS credits</li>
-            <li><strong>Email:</strong> $20/month for 500 contacts, scales to $175/month at 5,000 contacts</li>
-            <li><strong>Email + SMS:</strong> $35/month for 500 contacts, scales to $450/month at 5,000 contacts</li>
-            <li><strong>Enterprise:</strong> Custom pricing</li>
-          </ul>
-
-          <p className="mb-4">Klaviyo charges per contact. A 10,000-contact list costs $225/month for email only.</p>
-
-          <div className="bg-blue-50 border-l-4 border-blue-600 p-4 my-4">
-            <p><strong>Winner:</strong> Privy for small lists, Klaviyo for advanced features</p>
-          </div>
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">Ease of Use</h2>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Privy: Beginner-Friendly</h3>
-
-          <p className="mb-4">Privy's interface is simple. You can launch your first pop-up in 15 minutes:</p>
-
-          <p className="mb-4">1. Choose a template</p>
-          <p className="mb-4">2. Customize colors and copy</p>
-          <p className="mb-4">3. Set targeting rules</p>
-          <p className="mb-4">4. Connect email service</p>
-          <p className="mb-4">5. Publish</p>
-
-          <p className="mb-4">No marketing degree required. The dashboard shows basic metrics: subscribers, conversion rate, revenue attributed.</p>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Klaviyo: Power User Tool</h3>
-
-          <p className="mb-4">Klaviyo requires more setup time. Expect 2-4 hours for initial configuration:</p>
-
-          <p className="mb-4">1. Import customer data</p>
-          <p className="mb-4">2. Set up tracking</p>
-          <p className="mb-4">3. Build segmentation logic</p>
-          <p className="mb-4">4. Create welcome flow</p>
-          <p className="mb-4">5. Configure analytics</p>
-          <p className="mb-4">6. Design email templates</p>
-
-          <p className="mb-4">The interface is powerful but dense. New users often need tutorials or agency support.</p>
-
-          <div className="bg-blue-50 border-l-4 border-blue-600 p-4 my-4">
-            <p><strong>Winner:</strong> Privy for simplicity, Klaviyo for depth</p>
-          </div>
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">Email Design and Templates</h2>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Privy Templates</h3>
-
-          <p className="mb-4">Privy offers 50+ email templates focused on:</p>
-
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Welcome series</li>
-            <li>Abandoned cart</li>
-            <li>Post-purchase follow-up</li>
-            <li>Promotional broadcasts</li>
-          </ul>
-
-          <p className="mb-4">Templates are clean but basic. Customization options are limited compared to Klaviyo.</p>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Klaviyo Templates</h3>
-
-          <p className="mb-4">Klaviyo provides 100+ templates plus:</p>
-
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Drag-and-drop email builder</li>
-            <li>Dynamic product blocks</li>
-            <li>Countdown timers</li>
-            <li>Personalization tokens</li>
-            <li>Mobile responsive editor</li>
-            <li>Custom HTML option</li>
-          </ul>
-
-          <p className="mb-4">Templates convert at higher rates due to advanced personalization.</p>
-
-          <div className="bg-blue-50 border-l-4 border-blue-600 p-4 my-4">
-            <p><strong>Winner:</strong> Klaviyo for design flexibility</p>
-          </div>
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">Automation and Flows</h2>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Privy Automation</h3>
-
-          <p className="mb-4">Privy offers 10 pre-built flows:</p>
-
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Welcome series</li>
-            <li>Abandoned cart</li>
-            <li>Browse abandonment</li>
-            <li>Post-purchase</li>
-            <li>Winback campaigns</li>
-          </ul>
-
-          <p className="mb-4">Flows are simple trigger-based emails. No complex branching or predictive logic.</p>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Klaviyo Automation</h3>
-
-          <p className="mb-4">Klaviyo offers 100+ pre-built flows with:</p>
-
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Multi-step branching</li>
-            <li>Predictive send time optimization</li>
-            <li>Dynamic product recommendations</li>
-            <li>SMS + email combinations</li>
-            <li>A/B testing within flows</li>
-            <li>Advanced filters and segments</li>
-          </ul>
-
-          <p className="mb-4">Flows can include 20+ steps with complex logic based on customer behavior.</p>
-
-          <div className="bg-blue-50 border-l-4 border-blue-600 p-4 my-4">
-            <p><strong>Winner:</strong> Klaviyo for automation depth</p>
-          </div>
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">Segmentation Capabilities</h2>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Privy Segmentation</h3>
-
-          <p className="mb-4">Basic segmentation includes:</p>
-
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>New vs returning visitors</li>
-            <li>Location</li>
-            <li>Device type</li>
-            <li>Campaign source</li>
-            <li>Simple purchase history</li>
-          </ul>
-
-          <p className="mb-4">Good for pop-up targeting, limited for email personalization.</p>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Klaviyo Segmentation</h3>
-
-          <p className="mb-4">Advanced segmentation includes:</p>
-
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Purchase behavior (frequency, AOV, product type)</li>
-            <li>Predictive LTV and churn risk</li>
-            <li>Email engagement (opens, clicks)</li>
-            <li>Browse behavior</li>
-            <li>Custom event tracking</li>
-            <li>Cohort analysis</li>
-            <li>Lookalike audiences</li>
-          </ul>
-
-          <p className="mb-4">Segments update in real-time as customers act.</p>
-
-          <div className="bg-blue-50 border-l-4 border-blue-600 p-4 my-4">
-            <p><strong>Winner:</strong> Klaviyo by a mile</p>
-          </div>
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">Analytics and Reporting</h2>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Privy Analytics</h3>
-
-          <p className="mb-4">Privy tracks:</p>
-
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Subscriber count</li>
-            <li>Pop-up conversion rate</li>
-            <li>Email open rate</li>
-            <li>Click rate</li>
-            <li>Revenue attributed (basic)</li>
-          </ul>
-
-          <p className="mb-4">Reports are simple and easy to understand.</p>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Klaviyo Analytics</h3>
-
-          <p className="mb-4">Klaviyo provides:</p>
-
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Revenue attribution by campaign</li>
-            <li>Flow performance metrics</li>
-            <li>Customer LTV over time</li>
-            <li>Cohort retention analysis</li>
-            <li>AOV trends</li>
-            <li>Churn prediction</li>
-            <li>Multi-touch attribution</li>
-            <li>Revenue per recipient</li>
-          </ul>
-
-          <p className="mb-4">Reports are detailed but require analytics literacy.</p>
-
-          <div className="bg-blue-50 border-l-4 border-blue-600 p-4 my-4">
-            <p><strong>Winner:</strong> Klaviyo for depth, Privy for simplicity</p>
-          </div>
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">Integration Ecosystem</h2>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Privy Integrations</h3>
-
-          <p className="mb-4">Privy integrates with 30+ apps including:</p>
-
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Klaviyo (email handoff)</li>
-            <li>Shopify (native)</li>
-            <li>Recharge (subscriptions)</li>
-            <li>Yotpo (reviews)</li>
-            <li>Facebook/Google (ad audiences)</li>
-          </ul>
-
-          <p className="mb-4">Most integrations are one-way data syncs.</p>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Klaviyo Integrations</h3>
-
-          <p className="mb-4">Klaviyo integrates with 300+ apps including:</p>
-
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Shopify (deep native integration)</li>
-            <li>Facebook/Instagram (conversion API)</li>
-            <li>Google (analytics, ads)</li>
-            <li>Recharge (subscription flows)</li>
-            <li>Gorgias (support tickets)</li>
-            <li>Yotpo (review requests)</li>
-            <li>Attentive (SMS)</li>
-            <li>Postscript (SMS)</li>
-          </ul>
-
-          <p className="mb-4">Integrations are bidirectional with event tracking.</p>
-
-          <div className="bg-blue-50 border-l-4 border-blue-600 p-4 my-4">
-            <p><strong>Winner:</strong> Klaviyo for ecosystem</p>
-          </div>
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">Deliverability</h2>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Privy Deliverability</h3>
-
-          <p className="mb-4">Privy uses shared IP pools. Deliverability is good for small senders but can suffer at scale (50k+ emails/month).</p>
-
-          <p className="mb-4">Average open rates: 18-22%</p>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Klaviyo Deliverability</h3>
-
-          <p className="mb-4">Klaviyo uses dedicated IP options for large senders. Industry-leading deliverability with:</p>
-
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Dedicated IP warm-up</li>
-            <li>Inbox placement monitoring</li>
-            <li>Spam filter testing</li>
-            <li>Domain authentication</li>
-            <li>List hygiene tools</li>
-          </ul>
-
-          <p className="mb-4">Average open rates: 20-25%</p>
-
-          <div className="bg-blue-50 border-l-4 border-blue-600 p-4 my-4">
-            <p><strong>Winner:</strong> Klaviyo for scale</p>
-          </div>
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">Customer Support</h2>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Privy Support</h3>
-
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Email support (24-48 hour response)</li>
-            <li>Knowledge base</li>
-            <li>Video tutorials</li>
-            <li>No live chat</li>
-            <li>No phone support</li>
-          </ul>
-
-          <p className="mb-4">Support is adequate for basic questions.</p>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Klaviyo Support</h3>
-
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Email support (24 hour response)</li>
-            <li>Live chat (business hours)</li>
-            <li>Extensive documentation</li>
-            <li>Klaviyo Academy (free courses)</li>
-            <li>Agency partner network</li>
-            <li>Phone support (enterprise)</li>
-          </ul>
-
-          <p className="mb-4">Support is more comprehensive.</p>
-
-          <div className="bg-blue-50 border-l-4 border-blue-600 p-4 my-4">
-            <p><strong>Winner:</strong> Klaviyo for support depth</p>
-          </div>
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">Best Use Cases</h2>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Choose Privy When:</h3>
-
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>You need pop-ups and list building</li>
-            <li>Your list is under 5,000 contacts</li>
-            <li>You want simple, affordable email</li>
-            <li>You're a solo founder or small team</li>
-            <li>You need quick setup (under 1 hour)</li>
-            <li>Budget is under $50/month</li>
-          </ul>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Choose Klaviyo When:</h3>
-
-          <ul className="list-disc pl-6 space-y-2 mb-6">
-            <li>Email is your primary revenue channel</li>
-            <li>You need advanced segmentation</li>
-            <li>Your list exceeds 5,000 contacts</li>
-            <li>You want predictive analytics</li>
-            <li>You need SMS marketing</li>
-            <li>You have dedicated marketing resources</li>
-          </ul>
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">Using Both Together</h2>
-
-          <p className="mb-4">Many stores run Privy + Klaviyo:</p>
-
-          <p className="mb-4">1. <strong>Privy</strong> captures emails via pop-ups</p>
-          <p className="mb-4">2. <strong>Privy</strong> syncs subscribers to Klaviyo</p>
-          <p className="mb-4">3. <strong>Klaviyo</strong> sends campaigns and flows</p>
-          <p className="mb-4">4. <strong>Both</strong> track revenue attribution</p>
-
-          <p className="mb-4">This combo costs $24/month (Privy) + Klaviyo pricing but covers the full funnel.</p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">Comparison Table</h2>
-
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">FAQ: Klaviyo vs Privy</h2>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Q: Can I use both Privy and Klaviyo together?</h3>
-
-          <p className="mb-4">A: Yes. This is common. Privy handles pop-ups and list building, Klaviyo handles email campaigns and automation. They integrate directly.</p>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Q: Which is better for a new store?</h3>
-
-          <p className="mb-4">A: Privy for stores under $10k/month. Simple setup, affordable pricing. Upgrade to Klaviyo when email becomes a primary revenue channel.</p>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Q: Does Klaviyo have pop-ups?</h3>
-
-          <p className="mb-4">A: No. Klaviyo focuses on email and SMS. Use Privy, OptiMonk, or Justuno for pop-ups, then sync to Klaviyo.</p>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Q: How much does Klaviyo cost at scale?</h3>
-
-          <p className="mb-4">A: 10,000 contacts costs $225/month (email only). 50,000 contacts costs $725/month. Pricing scales with list size.</p>
-
-          <h3 className="text-xl font-bold mt-8 mb-3">Q: Can I migrate from Privy to Klaviyo?</h3>
-
-          <p className="mb-4">A: Yes. Export your Privy list, import to Klaviyo, rebuild flows. Both platforms support CSV import/export.</p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">Migration Path: Privy to Klaviyo</h2>
-
-          <p className="mb-4">If you're outgrowing Privy:</p>
-
-          <p className="mb-4">1. <strong>Set up Klaviyo account</strong> - Connect Shopify, verify domain</p>
-          <p className="mb-4">2. <strong>Export Privy list</strong> - Download CSV of all subscribers</p>
-          <p className="mb-4">3. <strong>Import to Klaviyo</strong> - Map fields, import segments</p>
-          <p className="mb-4">4. <strong>Rebuild flows</strong> - Welcome, abandoned cart, post-purchase</p>
-          <p className="mb-4">5. <strong>Update pop-up integration</strong> - Point Privy to Klaviyo lists</p>
-          <p className="mb-4">6. <strong>Test everything</strong> - Send test emails, check tracking</p>
-          <p className="mb-4">7. <strong>Cancel Privy</strong> - After 30-day overlap</p>
-
-          <p className="mb-4">Plan 2-4 hours for migration. Do it during low-traffic periods.</p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">Next Steps</h2>
-
-          <p className="mb-4">Ready to choose your email platform?</p>
-
-          <p className="mb-4">1. <strong>Audit your current setup</strong> - What tools are you using?</p>
-          <p className="mb-4">2. <strong>Define your goals</strong> - List building or email revenue?</p>
-          <p className="mb-4">3. <strong>Calculate list size</strong> - Under or over 5,000 contacts?</p>
-          <p className="mb-4">4. <strong>Pick your platform</strong> - Privy for simple, Klaviyo for advanced</p>
-          <p className="mb-4">5. <strong>Set up and test</strong> - Launch your first campaign</p>
-
-          <p className="mb-4">For more comparisons, check our guides on <a href="/blog/shopify-email-vs-klaviyo" className="text-blue-600 hover:underline">Shopify Email vs Klaviyo</a>, <a href="/blog/best-email-marketing-ecommerce" className="text-blue-600 hover:underline">Best Email Marketing for Ecommerce</a>, and <a href="/blog/best-popup-apps-shopify" className="text-blue-600 hover:underline">Best Pop-up Apps for Shopify</a>.</p>
-
-          <p className="mb-4">---</p>
-
-          <p className="mb-4"><strong>Stack Labs LLC</strong> helps ecommerce brands choose the right marketing stack. Our team tests and compares tools so you don't have to.</p>
-
-          <div className="mt-12 p-6 bg-gray-50 rounded-lg">
-            <p className="text-sm text-gray-500">
-              This article contains affiliate links. We may earn a commission at no extra cost to you.
+          <p className="text-xl text-gray-600 mb-8">
+            Klaviyo and Privy are two of the most popular email marketing apps for Shopify. Both integrate deeply with
+            the platform and claim to drive revenue — but they serve very different purposes.
+          </p>
+
+          <div className="bg-blue-50 border-l-4 border-blue-600 p-4 mb-8">
+            <p className="font-semibold mb-2">Quick Verdict:</p>
+            <p>
+              <strong>They are not direct competitors.</strong> Privy focuses on on-site pop-ups and list building.
+              Klaviyo is a full email and SMS platform with advanced segmentation. Many stores use both: Privy for
+              capturing emails, Klaviyo for converting them.
             </p>
           </div>
 
-          <div className="mt-8">
-            <Link href="/blog" className="text-blue-600 hover:underline">
-              ← Back to Blog
-            </Link>
+          <h2>Feature Comparison</h2>
+
+          <h3>Privy: Pop-ups First, Email Second</h3>
+          <p>Privy built its reputation on pop-ups. Email came later as an add-on.</p>
+          <ul>
+            <li>Best-in-class drag-and-drop pop-up builder</li>
+            <li>Exit-intent technology, spin wheels, and gamification</li>
+            <li>SMS and email capture with A/B testing</li>
+            <li>Basic email broadcasts and 10 simple automation flows</li>
+            <li>Easy setup — launch your first pop-up in 15 minutes</li>
+          </ul>
+          <p><strong>Strengths:</strong> Best pop-up builder in the category, easy setup, affordable at small scale.<br />
+          <strong>Weaknesses:</strong> Basic segmentation, no predictive analytics, limited automation depth.</p>
+
+          <h3>Klaviyo: Email and SMS Platform</h3>
+          <p>Klaviyo is built for serious email marketers who want advanced features.</p>
+          <ul>
+            <li>Industry-leading segmentation — purchase behavior, predictive LTV, churn risk</li>
+            <li>100+ pre-built email flows with multi-step branching</li>
+            <li>SMS marketing included with all plans</li>
+            <li>Revenue attribution — track email and SMS revenue</li>
+            <li>300+ app integrations, deep Shopify data</li>
+          </ul>
+          <p><strong>Strengths:</strong> Best-in-class segmentation, automation depth, predictive analytics, ROI tracking.<br />
+          <strong>Weaknesses:</strong> Steeper learning curve (2–4 hours setup), no native pop-ups, pricing scales with list.</p>
+
+          <h2>Pricing Comparison</h2>
+
+          <h3>Privy Pricing (flat rate)</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Plan</th>
+                <th>Price</th>
+                <th>Contacts</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Free</td>
+                <td>$0/month</td>
+                <td>100 contacts</td>
+              </tr>
+              <tr>
+                <td>Growth</td>
+                <td>$24/month</td>
+                <td>Unlimited</td>
+              </tr>
+              <tr>
+                <td>Professional</td>
+                <td>$45/month</td>
+                <td>Unlimited + advanced features</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Privy charges flat monthly fees regardless of list size — predictable costs as you grow.</p>
+
+          <h3>Klaviyo Pricing (per contact)</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Contacts</th>
+                <th>Email Only</th>
+                <th>Email + SMS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Up to 250</td>
+                <td>Free</td>
+                <td>Free</td>
+              </tr>
+              <tr>
+                <td>500</td>
+                <td>$20/month</td>
+                <td>$35/month</td>
+              </tr>
+              <tr>
+                <td>2,500</td>
+                <td>$60/month</td>
+                <td>$100/month</td>
+              </tr>
+              <tr>
+                <td>10,000</td>
+                <td>$225/month</td>
+                <td>$375/month</td>
+              </tr>
+              <tr>
+                <td>50,000</td>
+                <td>$725/month</td>
+                <td>$1,125/month</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>Automation Depth</h2>
+
+          <h3>Privy Flows (10 pre-built)</h3>
+          <ul>
+            <li>Welcome series, abandoned cart, post-purchase, winback</li>
+            <li>Simple trigger-based emails, no complex branching</li>
+          </ul>
+
+          <h3>Klaviyo Flows (100+ pre-built)</h3>
+          <ul>
+            <li>Multi-step branching with predictive send-time optimization</li>
+            <li>Dynamic product recommendations in flows</li>
+            <li>SMS + email combinations within single flows</li>
+            <li>A/B testing within flows, advanced filters</li>
+            <li>Flows with 20+ steps and complex behavioral logic</li>
+          </ul>
+
+          <p><strong>Winner: Klaviyo</strong> by a wide margin for automation depth.</p>
+
+          <h2>Segmentation</h2>
+          <p>
+            <strong>Privy</strong> offers basic segmentation: new vs returning, location, device type. Good for
+            pop-up targeting; limited for email personalization.
+          </p>
+          <p>
+            <strong>Klaviyo</strong> offers predictive segmentation: purchase frequency, LTV prediction, churn risk,
+            browse behavior, custom events. Segments update in real time as customers act.
+          </p>
+          <p><strong>Winner: Klaviyo</strong> — not even close.</p>
+
+          <h2>Using Both Together</h2>
+          <p>
+            Many stores run <strong>Privy + Klaviyo together</strong> as a proven combination:
+          </p>
+          <ol>
+            <li>Privy captures emails via exit-intent pop-ups</li>
+            <li>Privy syncs new subscribers directly to Klaviyo lists</li>
+            <li>Klaviyo sends the welcome flow and all future campaigns</li>
+            <li>Both platforms track revenue attribution</li>
+          </ol>
+          <p>
+            This combo costs $24/month (Privy Growth) + Klaviyo pricing but covers the full acquisition-to-conversion
+            funnel.
+          </p>
+
+          <h2>Best Use Cases</h2>
+
+          <h3>Choose Privy When:</h3>
+          <ul>
+            <li>You need pop-ups and list building as your primary goal</li>
+            <li>Your email list is under 5,000 contacts</li>
+            <li>You want simple, affordable email with flat pricing</li>
+            <li>You need quick setup under 1 hour</li>
+            <li>Budget is under $50/month</li>
+          </ul>
+
+          <h3>Choose Klaviyo When:</h3>
+          <ul>
+            <li>Email is your primary revenue channel (target 20–30% of revenue)</li>
+            <li>You need advanced segmentation for personalization</li>
+            <li>Your list exceeds 5,000 contacts</li>
+            <li>You want predictive analytics and revenue attribution</li>
+            <li>You need SMS marketing integrated with email</li>
+          </ul>
+
+          <h2>Comparison Table</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Privy</th>
+                <th>Klaviyo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Primary Focus</td>
+                <td>Pop-ups + Email</td>
+                <td>Email + SMS</td>
+              </tr>
+              <tr>
+                <td>Free Tier</td>
+                <td>100 contacts</td>
+                <td>250 contacts</td>
+              </tr>
+              <tr>
+                <td>Paid Starting</td>
+                <td>$24/month flat</td>
+                <td>$20/month (500 contacts)</td>
+              </tr>
+              <tr>
+                <td>Pop-up Builder</td>
+                <td>Excellent</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <td>Automation Flows</td>
+                <td>10 simple</td>
+                <td>100+ complex</td>
+              </tr>
+              <tr>
+                <td>Segmentation</td>
+                <td>Basic</td>
+                <td>Advanced + Predictive</td>
+              </tr>
+              <tr>
+                <td>SMS Marketing</td>
+                <td>Basic</td>
+                <td>Advanced</td>
+              </tr>
+              <tr>
+                <td>Integrations</td>
+                <td>30+</td>
+                <td>300+</td>
+              </tr>
+              <tr>
+                <td>Learning Curve</td>
+                <td>Low (15 min)</td>
+                <td>Medium (2–4 hours)</td>
+              </tr>
+              <tr>
+                <td>Best For</td>
+                <td>List building</td>
+                <td>Email revenue</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>Migration Path: Privy to Klaviyo</h2>
+          <p>If you are outgrowing Privy, here is the migration path:</p>
+          <ol>
+            <li>Set up Klaviyo account and connect Shopify</li>
+            <li>Export Privy list as CSV and import to Klaviyo</li>
+            <li>Rebuild flows (welcome, abandoned cart, post-purchase)</li>
+            <li>Point Privy pop-ups to sync to Klaviyo lists (not Privy email)</li>
+            <li>Test and verify all flows send correctly</li>
+            <li>Run Privy for pop-ups only, Klaviyo for all email</li>
+          </ol>
+          <p>Plan 2–4 hours for migration. Do it during a low-traffic period.</p>
+
+          <h2>FAQ: Klaviyo vs Privy</h2>
+          <p><strong>Q: Can I use both Privy and Klaviyo together?</strong><br />
+            A: Yes. This is the recommended approach. Privy for pop-ups, Klaviyo for email automation. They integrate directly.
+          </p>
+          <p><strong>Q: Which is better for a new store?</strong><br />
+            A: Privy for stores under $10k/month. Simple setup, affordable pricing. Upgrade to Klaviyo when email becomes
+            your primary revenue channel.
+          </p>
+          <p><strong>Q: Does Klaviyo have pop-ups?</strong><br />
+            A: No. Klaviyo focuses on email and SMS. Use Privy, OptiMonk, or Justuno for pop-ups, then sync to Klaviyo.
+          </p>
+          <p><strong>Q: How much does Klaviyo cost at 50,000 contacts?</strong><br />
+            A: $725/month for email only; $1,125/month for email + SMS. Significant investment — make sure email drives
+            at least 15–20% of revenue to justify it.
+          </p>
+
+          <h2>Related Articles</h2>
+          <ul>
+            <li><Link href="/blog/best-email-marketing-ecommerce">Best Email Marketing for Ecommerce 2026</Link></li>
+            <li><Link href="/blog/best-shopify-apps-conversion-2026">Best Shopify Apps for Conversion 2026</Link></li>
+            <li><Link href="/blog/best-shopify-apps-2026">Best Shopify Apps 2026: Complete Guide</Link></li>
+          </ul>
+
+          <div className="bg-gray-100 p-4 mt-8 text-sm text-gray-600">
+            <p><strong>Affiliate Disclosure:</strong> This post contains affiliate links. We may earn a commission
+            if you purchase through our links at no extra cost to you. We only recommend tools we&apos;ve tested and trust.</p>
           </div>
         </article>
       </div>

@@ -1,5 +1,11 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: 'Best Shopify Apps 2026: Complete Guide to Essential Tools',
+  description: 'Discover the best Shopify apps for 2026 across marketing, sales, customer service, and operations. Tested and reviewed.',
+  keywords: 'best shopify apps 2026, essential shopify apps, shopify app recommendations, shopify tools',
+};
+
 export default function BestShopifyApps2026() {
   return (
     <main className="py-12">

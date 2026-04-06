@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import { CheckCircle, BarChart3, ShoppingBag, Shield, Clock, TrendingUp, ArrowRight, Star } from 'lucide-react';
-import { FeatureCard, ArticleCard, ComparisonCard, CTAButton, TrustSignal, SectionHeading } from '@/components/ui';
+import { CheckCircle, BarChart3, ShoppingBag, Shield, Clock, TrendingUp, ArrowRight, Star, Package, Zap } from 'lucide-react';
 
 export const metadata = {
   title: 'Ecommerce Stack Solutions | Best Ecommerce Tools Reviews 2026',
@@ -25,6 +24,62 @@ const jsonLd = {
   }
 };
 
+const categories = [
+  {
+    icon: ShoppingBag,
+    href: '/pillar/ecommerce-platforms',
+    title: 'Ecommerce Platforms',
+    description: 'Online store builders and hosting. Shopify, WooCommerce, BigCommerce, and more.',
+    featured: true,
+  },
+  {
+    icon: TrendingUp,
+    href: '/pillar/email-marketing',
+    title: 'Email Marketing',
+    description: 'Email automation, newsletters, and campaigns. Klaviyo, Mailchimp, Omnisend, and others.',
+  },
+  {
+    icon: Star,
+    href: '/pillar/reviews',
+    title: 'Product Reviews',
+    description: 'Review collection and display apps. Yotpo, Judge.me, Loox, and review platforms.',
+  },
+  {
+    icon: BarChart3,
+    href: '/pillar/analytics',
+    title: 'Analytics & Reporting',
+    description: 'Store analytics, conversion tracking, and business intelligence tools.',
+  },
+  {
+    icon: Package,
+    href: '/pillar/shipping',
+    title: 'Shipping & Fulfillment',
+    description: 'Shipping software, label printing, and order fulfillment solutions.',
+  },
+  {
+    icon: Zap,
+    href: '/pillar/conversion',
+    title: 'Conversion Optimization',
+    description: 'A/B testing, popups, and CRO tools to boost your store\'s conversion rate.',
+  },
+];
+
+const articles = [
+  { href: '/blog', category: 'Comparison', title: 'Shopify vs WooCommerce: Which Platform Wins? (2026)', excerpt: 'Complete comparison of the two leading ecommerce platforms. Which one is right for your store?', date: 'Mar 2026' },
+  { href: '/blog', category: 'Comparison', title: 'Klaviyo vs Mailchimp: Email Marketing Showdown', excerpt: 'Feature-by-feature comparison of Klaviyo and Mailchimp for ecommerce email marketing.', date: 'Mar 2026' },
+  { href: '/blog', category: 'Comparison', title: 'Yotpo vs Judge.me: Product Reviews Comparison', excerpt: 'Which review platform is best for collecting and displaying customer reviews?', date: 'Mar 2026' },
+  { href: '/blog', category: 'Guide', title: 'Best Ecommerce Platforms for Small Stores', excerpt: 'Our top picks for ecommerce platforms for small online stores, ranked by value.', date: 'Mar 2026' },
+  { href: '/blog', category: 'Guide', title: 'Best Email Marketing for Ecommerce in 2026', excerpt: 'Complete guide to email marketing platforms for online stores.', date: 'Mar 2026' },
+  { href: '/blog', category: 'Guide', title: 'Best Review Apps for Shopify Stores', excerpt: 'Budget-friendly review collection options for Shopify merchants.', date: 'Mar 2026' },
+];
+
+const comparisons = [
+  { href: '/blog', title: 'Shopify vs WooCommerce', excerpt: 'Which ecommerce platform wins for small business? We break down pricing, features, and ease of use.' },
+  { href: '/blog', title: 'Klaviyo vs Mailchimp', excerpt: 'Email marketing-focused: which is right for your ecommerce store?' },
+  { href: '/blog', title: 'Yotpo vs Judge.me', excerpt: 'Review platform comparison for stores weighing collection options.' },
+  { href: '/blog', title: 'Best Platforms for Small Stores', excerpt: 'Our top picks for ecommerce platforms, ranked by value and features.' },
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -33,67 +88,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* ============================================
-          HERO — Full-width purple-to-pink gradient
-          ============================================ */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-purple-900 via-purple-800 to-pink-500">
-        {/* Decorative glow orbs */}
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl" />
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-yellow-300 px-4 py-1.5 rounded-full text-sm font-semibold mb-8 border border-yellow-400/20">
-              <Star className="h-4 w-4 fill-yellow-300" />
-              Trusted by 50,000+ store owners
-            </div>
-            <h1 className="text-5xl lg:text-6xl font-extrabold mb-6 leading-tight bg-gradient-to-r from-yellow-200 via-pink-200 to-purple-200 bg-clip-text text-transparent">
-              Ecommerce Tools for Growing Stores
-            </h1>
-            <p className="text-xl text-purple-100/90 mb-10 leading-relaxed max-w-2xl">
-              Independent, unbiased reviews of the best ecommerce tools for online stores.
-              Find the right platforms, email marketing, reviews, and analytics solutions.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <CTAButton href="/pillar/ecommerce-platforms" variant="primary" size="lg" icon={<ArrowRight className="h-5 w-5" />}>
-                Browse Platforms
-              </CTAButton>
-              <CTAButton href="/pillar/email-marketing" variant="outline" size="lg">
-                Browse Email Marketing
-              </CTAButton>
-            </div>
-          </div>
-
-          {/* Animated stat counters row */}
-          <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { value: '86+', label: 'In-Depth Articles' },
-              { value: '50+', label: 'Tools Reviewed' },
-              { value: '100%', label: 'Unbiased Reviews' },
-              { value: '2026', label: 'Latest Data' },
-            ].map((stat, i) => (
-              <div
-                key={i}
-                className="text-center p-5 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10"
-                style={{
-                  animation: `fadeInUp 0.6s ease-out ${i * 0.15}s both`,
-                }}
-              >
-                <div className="text-3xl lg:text-4xl font-extrabold text-yellow-300 mb-1">{stat.value}</div>
-                <div className="text-sm text-purple-200 font-medium">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Diagonal divider */}
-        <div
-          className="absolute bottom-0 left-0 w-full h-20 bg-white"
-          style={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 0)' }}
-        />
-      </section>
-
-      {/* Inline keyframes for fade-in animation (server component safe) */}
+      {/* Inline keyframes */}
       <style dangerouslySetInnerHTML={{ __html: `
         @keyframes fadeInUp {
           from { opacity: 0; transform: translateY(24px); }
@@ -102,219 +97,202 @@ export default function Home() {
       `}} />
 
       {/* ============================================
-          TRUST SIGNALS BAR
+          HERO
           ============================================ */}
-      <section className="bg-white border-b border-purple-100">
+      <section className="relative overflow-hidden bg-[#0a0a0a] dot-grid">
+        {/* Subtle lime gradient orb */}
+        <div className="absolute top-[-200px] right-[-100px] w-[600px] h-[600px] bg-[rgba(200,255,0,0.04)] rounded-full blur-3xl" />
+        <div className="absolute bottom-[-100px] left-[-100px] w-[400px] h-[400px] bg-[rgba(200,255,0,0.03)] rounded-full blur-3xl" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
+          <div className="max-w-4xl">
+            <div className="inline-flex items-center gap-2 bg-[rgba(200,255,0,0.08)] text-[#c8ff00] px-4 py-1.5 rounded-full text-sm font-semibold mb-8 border border-[rgba(200,255,0,0.2)]">
+              <Star className="h-4 w-4 fill-[#c8ff00]" />
+              Trusted by 50,000+ store owners
+            </div>
+            <h1 className="text-5xl lg:text-7xl font-extrabold mb-6 leading-[1.05] tracking-tight text-[#e8e6e3]" style={{ fontFamily: 'var(--font-display)' }}>
+              The tools your
+              <br />
+              store <span className="text-[#c8ff00]">actually</span> needs.
+            </h1>
+            <p className="text-xl text-[#a1a09e] mb-10 leading-relaxed max-w-2xl">
+              Independent, unbiased reviews of the best ecommerce tools for online stores.
+              Find the right platforms, email marketing, reviews, and analytics solutions.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/pillar/ecommerce-platforms"
+                className="btn-lime px-8 py-4 text-lg gap-2"
+              >
+                Browse Platforms
+                <ArrowRight className="h-5 w-5" />
+              </Link>
+              <Link
+                href="/pillar/email-marketing"
+                className="btn-outline-lime px-8 py-4 text-lg"
+              >
+                Email Marketing
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Lime accent line divider */}
+        <div className="lime-line w-full" />
+      </section>
+
+      {/* ============================================
+          STATS BAR
+          ============================================ */}
+      <section className="bg-[#0a0a0a] border-b border-[#27272a]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <TrustSignal
-              value="86"
-              label="In-depth articles"
-              icon={<BarChart3 className="h-6 w-6" />}
-            />
-            <TrustSignal
-              value="50+"
-              label="Ecommerce tools reviewed"
-              icon={<CheckCircle className="h-6 w-6" />}
-            />
-            <TrustSignal
-              value="100%"
-              label="Unbiased reviews"
-              icon={<Shield className="h-6 w-6" />}
-            />
-            <TrustSignal
-              value="2026"
-              label="Latest pricing data"
-              icon={<Clock className="h-6 w-6" />}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================
-          CATEGORIES — Masonry grid, first card featured
-          ============================================ */}
-      <section className="py-20 bg-gradient-to-b from-white to-purple-50/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            title="Browse by Category"
-            subtitle="Find the right ecommerce solutions for your online store"
-          />
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Featured card — spans full width */}
-            <div className="md:col-span-2 lg:col-span-3 rounded-2xl bg-gradient-to-r from-purple-900 to-pink-600 p-[2px] transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/20">
-              <div className="rounded-2xl bg-white hover:bg-purple-50/50 transition-colors duration-300">
-                <FeatureCard
-                  icon={<ShoppingBag className="h-8 w-8" />}
-                  href="/pillar/ecommerce-platforms"
-                  title="Ecommerce Platforms"
-                  description="Online store builders and hosting. Shopify, WooCommerce, BigCommerce, and more."
-                />
+            {[
+              { value: '86+', label: 'In-Depth Articles', icon: BarChart3 },
+              { value: '50+', label: 'Tools Reviewed', icon: CheckCircle },
+              { value: '100%', label: 'Unbiased Reviews', icon: Shield },
+              { value: '2026', label: 'Latest Data', icon: Clock },
+            ].map((stat, i) => (
+              <div
+                key={i}
+                className="text-center"
+                style={{ animation: `fadeInUp 0.6s ease-out ${i * 0.1}s both` }}
+              >
+                <div className="stat-number text-4xl lg:text-5xl mb-2">{stat.value}</div>
+                <div className="text-sm text-[#a1a09e] font-medium">{stat.label}</div>
               </div>
-            </div>
-            <div className="rounded-2xl border border-transparent hover:border-purple-300 transition-all duration-300 hover:bg-purple-50/50">
-              <FeatureCard
-                icon={<TrendingUp className="h-8 w-8" />}
-                href="/pillar/email-marketing"
-                title="Email Marketing"
-                description="Email automation, newsletters, and campaigns. Klaviyo, Mailchimp, Omnisend, and others."
-              />
-            </div>
-            <div className="rounded-2xl border border-transparent hover:border-purple-300 transition-all duration-300 hover:bg-purple-50/50">
-              <FeatureCard
-                icon={<Star className="h-8 w-8" />}
-                href="/pillar/reviews"
-                title="Product Reviews"
-                description="Review collection and display apps. Yotpo, Judge.me, Loox, and review platforms."
-              />
-            </div>
-            <div className="rounded-2xl border border-transparent hover:border-purple-300 transition-all duration-300 hover:bg-purple-50/50">
-              <FeatureCard
-                icon={<BarChart3 className="h-8 w-8" />}
-                href="/pillar/analytics"
-                title="Analytics & Reporting"
-                description="Store analytics, conversion tracking, and business intelligence tools."
-              />
-            </div>
-            <div className="rounded-2xl border border-transparent hover:border-purple-300 transition-all duration-300 hover:bg-purple-50/50">
-              <FeatureCard
-                icon={<ShoppingBag className="h-8 w-8" />}
-                href="/pillar/shipping"
-                title="Shipping & Fulfillment"
-                description="Shipping software, label printing, and order fulfillment solutions."
-              />
-            </div>
-            <div className="rounded-2xl border border-transparent hover:border-purple-300 transition-all duration-300 hover:bg-purple-50/50">
-              <FeatureCard
-                icon={<CheckCircle className="h-8 w-8" />}
-                href="/pillar/conversion"
-                title="Conversion Optimization"
-                description="A/B testing, popups, and CRO tools to boost your store's conversion rate."
-              />
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Diagonal divider — purple accent */}
-      <div className="relative h-16 bg-gradient-to-b from-purple-50/50 to-white">
-        <div
-          className="absolute inset-0 bg-white"
-          style={{ clipPath: 'polygon(0 0, 100% 100%, 100% 100%, 0 100%)' }}
-        />
-      </div>
-
       {/* ============================================
-          LATEST ARTICLES — 3-col grid
+          CATEGORIES
           ============================================ */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#0a0a0a] dot-grid relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            title="Latest Articles"
-            subtitle="Fresh insights and comparisons to help you choose the right ecommerce tools"
-          />
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <ArticleCard
-              href="/blog"
-              category="Comparison"
-              title="Shopify vs WooCommerce: Which Platform Wins? (2026)"
-              excerpt="Complete comparison of the two leading ecommerce platforms. Which one is right for your store?"
-              date="Mar 2026"
-            />
-            <ArticleCard
-              href="/blog"
-              category="Comparison"
-              title="Klaviyo vs Mailchimp: Email Marketing Showdown"
-              excerpt="Feature-by-feature comparison of Klaviyo and Mailchimp for ecommerce email marketing."
-              date="Mar 2026"
-            />
-            <ArticleCard
-              href="/blog"
-              category="Comparison"
-              title="Yotpo vs Judge.me: Product Reviews Comparison"
-              excerpt="Which review platform is best for collecting and displaying customer reviews?"
-              date="Mar 2026"
-            />
-            <ArticleCard
-              href="/blog"
-              category="Guide"
-              title="Best Ecommerce Platforms for Small Stores"
-              excerpt="Our top picks for ecommerce platforms for small online stores, ranked by value."
-              date="Mar 2026"
-            />
-            <ArticleCard
-              href="/blog"
-              category="Guide"
-              title="Best Email Marketing for Ecommerce in 2026"
-              excerpt="Complete guide to email marketing platforms for online stores."
-              date="Mar 2026"
-            />
-            <ArticleCard
-              href="/blog"
-              category="Guide"
-              title="Best Review Apps for Shopify Stores"
-              excerpt="Budget-friendly review collection options for Shopify merchants."
-              date="Mar 2026"
-            />
+          <div className="mb-12">
+            <h2 className="text-3xl lg:text-4xl font-extrabold text-[#e8e6e3] mb-3 tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
+              Browse by Category
+            </h2>
+            <p className="text-[#a1a09e] text-lg">Find the right ecommerce solutions for your online store</p>
           </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {categories.map((cat, i) => {
+              const Icon = cat.icon;
+              return (
+                <Link
+                  key={i}
+                  href={cat.href}
+                  className={`group card-dark p-6 block ${cat.featured ? 'md:col-span-2 lg:col-span-3 border-[rgba(200,255,0,0.15)]' : ''}`}
+                >
+                  <div className="flex items-start gap-4">
+                    <div className={`flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center ${cat.featured ? 'bg-[#c8ff00] text-[#0a0a0a]' : 'bg-[rgba(200,255,0,0.1)] text-[#c8ff00]'} transition-colors group-hover:bg-[#c8ff00] group-hover:text-[#0a0a0a]`}>
+                      <Icon className="h-6 w-6" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg font-bold text-[#e8e6e3] mb-1 flex items-center gap-2" style={{ fontFamily: 'var(--font-display)' }}>
+                        {cat.title}
+                        <ArrowRight className="h-4 w-4 text-[#52525b] group-hover:text-[#c8ff00] group-hover:translate-x-1 transition-all" />
+                      </h3>
+                      <p className="text-[#a1a09e] text-sm leading-relaxed">{cat.description}</p>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Lime line divider */}
+      <div className="lime-line w-full" />
+
+      {/* ============================================
+          LATEST ARTICLES
+          ============================================ */}
+      <section className="py-20 bg-[#fafaf9]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-12">
+            <h2 className="text-3xl lg:text-4xl font-extrabold text-[#141413] mb-3 tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
+              Latest Articles
+            </h2>
+            <p className="text-[#52525b] text-lg">Fresh insights and comparisons to help you choose the right ecommerce tools</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {articles.map((article, i) => (
+              <Link
+                key={i}
+                href={article.href}
+                className="group block bg-white rounded-xl border border-[#e4e4e0] overflow-hidden hover:border-[#c8ff00] hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
+              >
+                <div className="p-5">
+                  <span className="inline-block px-3 py-1 bg-[#0a0a0a] text-[#c8ff00] text-xs font-bold rounded-full mb-3 tracking-wide uppercase">
+                    {article.category}
+                  </span>
+                  <h3 className="text-base font-bold mb-2 text-[#141413] group-hover:text-[#0a0a0a] transition leading-snug" style={{ fontFamily: 'var(--font-display)' }}>
+                    {article.title}
+                  </h3>
+                  <p className="text-[#52525b] text-sm mb-3 leading-relaxed line-clamp-2">{article.excerpt}</p>
+                  <p className="text-[#a1a09e] text-xs font-medium">{article.date}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+
           <div className="text-center mt-12">
-            <CTAButton href="/blog" variant="secondary" size="md">
+            <Link href="/blog" className="btn-dark px-6 py-3 text-base gap-2">
               View All Articles
-            </CTAButton>
+              <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>
 
       {/* ============================================
-          COMPARISONS — 2-col grid with purple tint
+          COMPARISONS
           ============================================ */}
-      <section className="relative py-20 bg-purple-50">
-        {/* Top diagonal divider */}
+      <section className="relative py-20 bg-[#0a0a0a] dot-grid">
+        {/* Diagonal clip top */}
         <div
-          className="absolute top-0 left-0 w-full h-16 bg-white"
+          className="absolute top-0 left-0 w-full h-16 bg-[#fafaf9]"
           style={{ clipPath: 'polygon(0 0, 100% 0, 0 100%)' }}
         />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
-          <SectionHeading
-            title="Head-to-Head Comparisons"
-            subtitle="Direct comparisons to help you make the right choice"
-          />
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="rounded-2xl border border-transparent hover:border-purple-300 transition-all duration-300 hover:bg-white">
-              <ComparisonCard
-                href="/blog"
-                title="Shopify vs WooCommerce"
-                excerpt="Which ecommerce platform wins for small business? We break down pricing, features, and ease of use."
-              />
-            </div>
-            <div className="rounded-2xl border border-transparent hover:border-purple-300 transition-all duration-300 hover:bg-white">
-              <ComparisonCard
-                href="/blog"
-                title="Klaviyo vs Mailchimp"
-                excerpt="Email marketing-focused: which is right for your ecommerce store?"
-              />
-            </div>
-            <div className="rounded-2xl border border-transparent hover:border-purple-300 transition-all duration-300 hover:bg-white">
-              <ComparisonCard
-                href="/blog"
-                title="Yotpo vs Judge.me"
-                excerpt="Review platform comparison for stores weighing collection options."
-              />
-            </div>
-            <div className="rounded-2xl border border-transparent hover:border-purple-300 transition-all duration-300 hover:bg-white">
-              <ComparisonCard
-                href="/blog"
-                title="Best Platforms for Small Stores"
-                excerpt="Our top picks for ecommerce platforms, ranked by value and features."
-              />
-            </div>
+          <div className="mb-12">
+            <h2 className="text-3xl lg:text-4xl font-extrabold text-[#e8e6e3] mb-3 tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
+              Head-to-Head <span className="text-[#c8ff00]">Comparisons</span>
+            </h2>
+            <p className="text-[#a1a09e] text-lg">Direct comparisons to help you make the right choice</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-5">
+            {comparisons.map((comp, i) => (
+              <Link
+                key={i}
+                href={comp.href}
+                className="group card-dark p-6 block"
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="text-lg font-bold text-[#e8e6e3]" style={{ fontFamily: 'var(--font-display)' }}>
+                    {comp.title}
+                  </h3>
+                  <span className="text-xs font-bold px-2 py-1 bg-[rgba(255,107,74,0.15)] text-[#ff6b4a] rounded-full uppercase tracking-wide">
+                    VS
+                  </span>
+                </div>
+                <p className="text-[#a1a09e] text-sm leading-relaxed">{comp.excerpt}</p>
+              </Link>
+            ))}
           </div>
         </div>
 
-        {/* Bottom diagonal divider */}
+        {/* Diagonal clip bottom */}
         <div
-          className="absolute bottom-0 left-0 w-full h-16 bg-white"
+          className="absolute bottom-0 left-0 w-full h-16 bg-[#0a0a0a]"
           style={{ clipPath: 'polygon(100% 0, 100% 100%, 0 100%)' }}
         />
       </section>
@@ -322,66 +300,75 @@ export default function Home() {
       {/* ============================================
           WHY TRUST US
           ============================================ */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            title="Why Trust Our Reviews?"
-            subtitle="We're committed to providing honest, data-driven insights"
-            align="center"
-          />
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-8 rounded-2xl border border-purple-100 hover:border-purple-300 hover:bg-purple-50/50 transition-all duration-300">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-500 rounded-xl mb-5 shadow-lg shadow-purple-500/20">
-                <CheckCircle className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Independent Analysis</h3>
-              <p className="text-gray-600">We receive no funding from vendors. Our reviews are 100% unbiased and data-driven.</p>
-            </div>
-            <div className="text-center p-8 rounded-2xl border border-purple-100 hover:border-purple-300 hover:bg-purple-50/50 transition-all duration-300">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-500 rounded-xl mb-5 shadow-lg shadow-purple-500/20">
-                <TrendingUp className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Always Current</h3>
-              <p className="text-gray-600">We update pricing and feature data monthly. No outdated information.</p>
-            </div>
-            <div className="text-center p-8 rounded-2xl border border-purple-100 hover:border-purple-300 hover:bg-purple-50/50 transition-all duration-300">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-500 rounded-xl mb-5 shadow-lg shadow-purple-500/20">
-                <ShoppingBag className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Ecommerce Focus</h3>
-              <p className="text-gray-600">We specialize in tools for online stores. No enterprise bloat.</p>
-            </div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-extrabold text-[#e8e6e3] mb-3 tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
+              Why Trust Our Reviews?
+            </h2>
+            <p className="text-[#a1a09e] text-lg max-w-2xl mx-auto">We&apos;re committed to providing honest, data-driven insights</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                icon: CheckCircle,
+                title: 'Independent Analysis',
+                desc: 'We receive no funding from vendors. Our reviews are 100% unbiased and data-driven.',
+              },
+              {
+                icon: TrendingUp,
+                title: 'Always Current',
+                desc: 'We update pricing and feature data monthly. No outdated information.',
+              },
+              {
+                icon: ShoppingBag,
+                title: 'Ecommerce Focus',
+                desc: 'We specialize in tools for online stores. No enterprise bloat.',
+              },
+            ].map((item, i) => {
+              const Icon = item.icon;
+              return (
+                <div key={i} className="text-center p-8 card-dark">
+                  <div className="inline-flex items-center justify-center w-14 h-14 bg-[rgba(200,255,0,0.1)] rounded-xl mb-5">
+                    <Icon className="h-7 w-7 text-[#c8ff00]" />
+                  </div>
+                  <h3 className="text-lg font-bold text-[#e8e6e3] mb-2" style={{ fontFamily: 'var(--font-display)' }}>{item.title}</h3>
+                  <p className="text-[#a1a09e] text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* ============================================
-          FINAL CTA — Gradient background
+          FINAL CTA
           ============================================ */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-purple-900 via-purple-800 to-pink-600">
-        {/* Top diagonal divider */}
-        <div
-          className="absolute top-0 left-0 w-full h-16 bg-white"
-          style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%)' }}
-        />
+      <section className="relative overflow-hidden bg-[#0a0a0a]">
+        {/* Lime line top */}
+        <div className="lime-line w-full" />
 
-        {/* Decorative glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-pink-500/15 rounded-full blur-3xl" />
+        {/* Subtle glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[rgba(200,255,0,0.04)] rounded-full blur-3xl" />
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-28 text-center">
-          <h2 className="text-3xl lg:text-5xl font-extrabold mb-6 bg-gradient-to-r from-yellow-200 via-pink-200 to-purple-200 bg-clip-text text-transparent">
-            Ready to Find the Right Ecommerce Tools?
+          <h2 className="text-3xl lg:text-5xl font-extrabold mb-6 text-[#e8e6e3] tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
+            Ready to find the right
+            <br />
+            <span className="text-[#c8ff00]">ecommerce tools?</span>
           </h2>
-          <p className="text-lg text-purple-100/90 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg text-[#a1a09e] mb-10 max-w-2xl mx-auto">
             Start with our most popular guides and comparisons. Everything you need to make an informed decision.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <CTAButton href="/pillar/ecommerce-platforms" variant="primary" size="lg">
+            <Link href="/pillar/ecommerce-platforms" className="btn-lime px-8 py-4 text-lg gap-2">
               Start with Platforms
-            </CTAButton>
-            <CTAButton href="/blog" variant="outline" size="lg">
+              <ArrowRight className="h-5 w-5" />
+            </Link>
+            <Link href="/blog" className="btn-outline-lime px-8 py-4 text-lg">
               Browse All Articles
-            </CTAButton>
+            </Link>
           </div>
         </div>
       </section>

@@ -2,7 +2,16 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, Search } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+
+const navLinks = [
+  { href: '/pillar/ecommerce-platforms', label: 'Platforms' },
+  { href: '/pillar/email-marketing', label: 'Email' },
+  { href: '/pillar/reviews', label: 'Reviews' },
+  { href: '/pillar/analytics', label: 'Analytics' },
+  { href: '/pillar/shipping', label: 'Shipping' },
+  { href: '/blog', label: 'Articles' },
+];
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -17,78 +26,63 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-      scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-white/80 backdrop-blur-md'
-    }`}>
+    <header
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
+        scrolled
+          ? 'bg-[#0a0a0a]/95 backdrop-blur-md border-b border-[#27272a]'
+          : 'bg-[#0a0a0a]/80 backdrop-blur-md'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="bg-gradient-to-r from-amber-600 to-orange-700 text-white px-3 py-1.5 rounded-lg font-bold text-lg shadow-sm group-hover:shadow-md transition-all duration-300">
-              Ecom Stack
-            </div>
+            <span
+              className="text-xl font-extrabold tracking-tight text-[#e8e6e3] group-hover:text-[#c8ff00] transition-colors"
+              style={{ fontFamily: 'var(--font-display)' }}
+            >
+              Ecom<span className="text-[#c8ff00]">Stack</span>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
-            <Link href="/pillar/ecommerce-platforms" className="text-gray-600 hover:text-amber-600 transition font-medium">
-              Platforms
-            </Link>
-            <Link href="/pillar/email-marketing" className="text-gray-600 hover:text-amber-600 transition font-medium">
-              Email Marketing
-            </Link>
-            <Link href="/pillar/reviews" className="text-gray-600 hover:text-amber-600 transition font-medium">
-              Reviews
-            </Link>
-            <Link href="/pillar/analytics" className="text-gray-600 hover:text-amber-600 transition font-medium">
-              Analytics
-            </Link>
-            <Link href="/pillar/shipping" className="text-gray-600 hover:text-amber-600 transition font-medium">
-              Shipping
-            </Link>
-            <Link href="/blog" className="text-gray-600 hover:text-amber-600 transition font-medium">
-              Articles
-            </Link>
+          <nav className="hidden md:flex items-center gap-7">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-[#a1a09e] hover:text-[#c8ff00] transition-colors text-sm font-medium"
+              >
+                {link.label}
+              </Link>
+            ))}
           </nav>
 
-          {/* Right side */}
-          <div className="flex items-center gap-4">
-            <button className="p-2 text-gray-600 hover:text-amber-600 hover:bg-amber-50 rounded-lg transition" aria-label="Search">
-              <Search className="h-5 w-5" />
-            </button>
-            <button 
-              className="md:hidden p-2 text-gray-600 hover:text-amber-600 hover:bg-amber-50 rounded-lg transition"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-            </button>
-          </div>
+          {/* Mobile toggle */}
+          <button
+            className="md:hidden p-2 text-[#a1a09e] hover:text-[#c8ff00] transition-colors"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-gray-200 bg-white">
-          <nav className="px-4 py-4 space-y-2">
-            <Link href="/pillar/ecommerce-platforms" className="block text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition py-3 px-3 rounded-lg font-medium">
-              Platforms
-            </Link>
-            <Link href="/pillar/email-marketing" className="block text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition py-3 px-3 rounded-lg font-medium">
-              Email Marketing
-            </Link>
-            <Link href="/pillar/reviews" className="block text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition py-3 px-3 rounded-lg font-medium">
-              Reviews
-            </Link>
-            <Link href="/pillar/analytics" className="block text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition py-3 px-3 rounded-lg font-medium">
-              Analytics
-            </Link>
-            <Link href="/pillar/shipping" className="block text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition py-3 px-3 rounded-lg font-medium">
-              Shipping
-            </Link>
-            <Link href="/blog" className="block text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition py-3 px-3 rounded-lg font-medium">
-              Articles
-            </Link>
+        <div className="md:hidden border-t border-[#27272a] bg-[#0a0a0a]">
+          <nav className="px-4 py-4 space-y-1">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="block text-[#a1a09e] hover:text-[#c8ff00] hover:bg-[rgba(200,255,0,0.05)] transition py-3 px-3 rounded-lg font-medium text-sm"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {link.label}
+              </Link>
+            ))}
           </nav>
         </div>
       )}

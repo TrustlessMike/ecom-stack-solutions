@@ -16,16 +16,16 @@ const categoryIcons = [PlatformsIcon, EmailIcon, ReviewsIcon, AnalyticsIcon, Shi
 
 const categoryImages = [
   'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&q=80',
-  'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=400&q=80',
-  'https://images.unsplash.com/photo-1556742111-a301076d9d18?w=400&q=80',
+  'https://images.unsplash.com/photo-1533750446969-255bbf191920?w=400&q=80',
+  'https://images.unsplash.com/photo-1633613286991-611fe299c4be?w=400&q=80',
   'https://images.unsplash.com/photo-1543286386-713bdd548da4?w=400&q=80',
-  'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400&q=80',
+  'https://images.unsplash.com/photo-1573207535342-8c0f9506112e?w=400&q=80',
   'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80',
 ];
 
 const articleImages = [
   'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&q=80',
-  'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=400&q=80',
+  'https://images.unsplash.com/photo-1533750446969-255bbf191920?w=400&q=80',
   'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=400&q=80',
 ];
 
